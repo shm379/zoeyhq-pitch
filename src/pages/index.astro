@@ -107,49 +107,226 @@ import Layout from '../layouts/Layout.astro';
         </div>
     </section>
 
-    <!-- ═══════════════════════════════════ -->
-    <!-- CITY SHOWCASE                       -->
-    <!-- ═══════════════════════════════════ -->
-    <section class="city-showcase py-0 overflow-hidden border-y border-slate-200">
-        <div class="grid grid-cols-2 md:grid-cols-5" style="height:260px">
-            <div class="relative group overflow-hidden">
-                <img src="https://images.unsplash.com/photo-1582672060674-bc2bd808a8b5?w=600&q=80&auto=format&fit=crop" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" alt="Dubai" />
-                <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent"></div>
-                <div class="absolute bottom-4 left-4">
-                    <div class="text-white font-bold text-sm">🇦🇪 Dubai</div>
-                    <div class="text-white/55 text-[10px] uppercase tracking-wider">UAE</div>
+    <!-- ═══════════════════════════════════════════════════════ -->
+    <!-- A DAY IN THE LIFE  (Before vs After)                   -->
+    <!-- ═══════════════════════════════════════════════════════ -->
+    <section class="py-20 px-6 bg-slate-50 border-y border-slate-200 overflow-hidden">
+        <div class="max-w-6xl mx-auto">
+
+            <div class="text-center mb-12 fade-up">
+                <span class="text-slate-400 tracking-widest text-xs font-bold uppercase mb-3 block">The Transformation</span>
+                <h2 class="text-3xl md:text-4xl font-extrabold text-slate-900 tracking-tight">
+                    A Day in the Life of a Gulf Real Estate Agent
+                </h2>
+            </div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-6 fade-up">
+
+                <!-- ─── BEFORE ─────────────────────────────── -->
+                <div class="rounded-3xl overflow-hidden border border-rose-200" style="background:linear-gradient(160deg,#1a0808 0%,#2d0f0f 100%)">
+                    <!-- Header -->
+                    <div class="flex items-center justify-between px-5 py-4 border-b border-rose-900/40">
+                        <div class="flex items-center gap-3">
+                            <div class="w-2.5 h-2.5 rounded-full bg-rose-500 animate-pulse"></div>
+                            <span class="text-rose-400 text-xs font-bold uppercase tracking-widest">Without ZoeyHQ</span>
+                        </div>
+                        <span class="text-rose-500/60 text-[10px]">😓 Every single day</span>
+                    </div>
+
+                    <div class="p-5 space-y-3">
+
+                        <!-- Scene 1: Morning overwhelm -->
+                        <div class="rounded-2xl p-4" style="background:rgba(255,255,255,0.04);border:1px solid rgba(220,38,38,0.2)">
+                            <div class="flex items-center gap-2 mb-3">
+                                <span class="text-[10px] font-mono text-rose-400/70 bg-rose-900/40 px-2 py-0.5 rounded">⏰ 9:15 AM</span>
+                                <span class="text-white/40 text-[10px]">Just arrived at the office</span>
+                            </div>
+                            <div class="grid grid-cols-3 gap-2 mb-3">
+                                <div class="rounded-xl p-2.5 text-center" style="background:rgba(37,211,102,0.08);border:1px solid rgba(37,211,102,0.15)">
+                                    <div class="text-[#25D366] text-xs font-bold">WA</div>
+                                    <div class="text-rose-400 font-black text-lg leading-none mt-0.5">47</div>
+                                    <div class="text-white/30 text-[9px]">unread</div>
+                                </div>
+                                <div class="rounded-xl p-2.5 text-center" style="background:rgba(36,161,222,0.08);border:1px solid rgba(36,161,222,0.15)">
+                                    <div class="text-blue-400 text-xs font-bold">TG</div>
+                                    <div class="text-rose-400 font-black text-lg leading-none mt-0.5">23</div>
+                                    <div class="text-white/30 text-[9px]">unread</div>
+                                </div>
+                                <div class="rounded-xl p-2.5 text-center" style="background:rgba(225,48,108,0.08);border:1px solid rgba(225,48,108,0.15)">
+                                    <div class="text-pink-400 text-xs font-bold">IG</div>
+                                    <div class="text-rose-400 font-black text-lg leading-none mt-0.5">18</div>
+                                    <div class="text-white/30 text-[9px]">unread</div>
+                                </div>
+                            </div>
+                            <div class="flex items-center gap-2 text-rose-400/80 text-[11px]">
+                                <span>⚠</span>
+                                <span>No way to know which are hot leads — reading all manually</span>
+                            </div>
+                        </div>
+
+                        <!-- Scene 2: Midday chaos -->
+                        <div class="rounded-2xl p-4" style="background:rgba(255,255,255,0.04);border:1px solid rgba(220,38,38,0.2)">
+                            <div class="flex items-center gap-2 mb-3">
+                                <span class="text-[10px] font-mono text-rose-400/70 bg-rose-900/40 px-2 py-0.5 rounded">⏰ 2:30 PM</span>
+                                <span class="text-white/40 text-[10px]">Still on phone calls</span>
+                            </div>
+                            <!-- Fake Excel-like table -->
+                            <div class="rounded-xl overflow-hidden mb-2" style="border:1px solid rgba(255,255,255,0.06)">
+                                <div class="grid grid-cols-4 gap-0 text-[9px]">
+                                    <div class="px-2 py-1.5 text-white/25 font-bold" style="background:rgba(255,255,255,0.06)">Name</div>
+                                    <div class="px-2 py-1.5 text-white/25 font-bold" style="background:rgba(255,255,255,0.06)">Budget</div>
+                                    <div class="px-2 py-1.5 text-white/25 font-bold" style="background:rgba(255,255,255,0.06)">Status</div>
+                                    <div class="px-2 py-1.5 text-white/25 font-bold" style="background:rgba(255,255,255,0.06)">Last msg</div>
+                                    <div class="px-2 py-1 text-white/50">Ahmed R.</div>
+                                    <div class="px-2 py-1 text-white/50">2M AED?</div>
+                                    <div class="px-2 py-1 text-yellow-500/70">Pending</div>
+                                    <div class="px-2 py-1 text-rose-400">6h ago</div>
+                                    <div class="px-2 py-1 text-white/50">Khalid M.</div>
+                                    <div class="px-2 py-1 text-white/50">Unknown</div>
+                                    <div class="px-2 py-1 text-white/30">???</div>
+                                    <div class="px-2 py-1 text-rose-400">1d ago</div>
+                                    <div class="px-2 py-1 text-white/30 italic">Fatima...</div>
+                                    <div class="px-2 py-1 text-white/20">—</div>
+                                    <div class="px-2 py-1 text-white/20">forgot</div>
+                                    <div class="px-2 py-1 text-rose-500 font-bold">LOST</div>
+                                </div>
+                            </div>
+                            <div class="text-rose-400/70 text-[10px]">📊 Google Sheet · 4 tabs · No automation</div>
+                        </div>
+
+                        <!-- Scene 3: Late night -->
+                        <div class="rounded-2xl p-4" style="background:rgba(220,38,38,0.08);border:1px solid rgba(220,38,38,0.25)">
+                            <div class="flex items-center justify-between mb-2">
+                                <span class="text-[10px] font-mono text-rose-400 bg-rose-900/40 px-2 py-0.5 rounded">⏰ 11:45 PM</span>
+                                <span class="text-rose-400 text-xs">🌙 Still working</span>
+                            </div>
+                            <div class="text-white/60 text-xs leading-relaxed mb-2">
+                                "Ahmed Al-Rashid was a cash buyer — messaged at 10AM. Never got a reply. He went with a competitor."
+                            </div>
+                            <div class="flex items-center justify-between">
+                                <span class="text-rose-400 text-xs font-bold">💸 3 deals lost today</span>
+                                <span class="text-white/25 text-[10px]">~$150,000 in commissions</span>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <!-- ─── AFTER ──────────────────────────────── -->
+                <div class="rounded-3xl overflow-hidden border border-emerald-200" style="background:linear-gradient(160deg,#f0fdf4 0%,#ecfdf5 100%)">
+                    <!-- Header -->
+                    <div class="flex items-center justify-between px-5 py-4 border-b border-emerald-200">
+                        <div class="flex items-center gap-3">
+                            <div class="w-2.5 h-2.5 rounded-full bg-emerald-500 animate-pulse shadow-[0_0_8px_#10b981]"></div>
+                            <span class="text-emerald-600 text-xs font-bold uppercase tracking-widest">With ZoeyHQ</span>
+                        </div>
+                        <span class="text-emerald-500/70 text-[10px]">😌 Automated & calm</span>
+                    </div>
+
+                    <div class="p-5 space-y-3">
+
+                        <!-- Scene 1: Morning organized -->
+                        <div class="rounded-2xl p-4 bg-white border border-emerald-100 shadow-sm">
+                            <div class="flex items-center gap-2 mb-3">
+                                <span class="text-[10px] font-mono text-emerald-600 bg-emerald-50 px-2 py-0.5 rounded border border-emerald-100">⏰ 9:15 AM</span>
+                                <span class="text-slate-400 text-[10px]">AI handled it overnight</span>
+                            </div>
+                            <!-- Unified inbox preview -->
+                            <div class="space-y-1.5 mb-3">
+                                <div class="flex items-center justify-between rounded-lg px-3 py-2 bg-emerald-50 border border-emerald-100">
+                                    <div class="flex items-center gap-2">
+                                        <span class="text-emerald-500 text-xs">⚡</span>
+                                        <span class="text-slate-700 text-xs font-medium">Ahmed Al-Rashid</span>
+                                        <span class="text-[9px] text-white bg-emerald-500 rounded-full px-1.5 py-0.5 font-bold">HOT 94</span>
+                                    </div>
+                                    <span class="text-emerald-500 text-[10px] font-medium">AI replied ✓</span>
+                                </div>
+                                <div class="flex items-center justify-between rounded-lg px-3 py-2 bg-slate-50 border border-slate-100">
+                                    <div class="flex items-center gap-2">
+                                        <span class="text-slate-400 text-xs">→</span>
+                                        <span class="text-slate-600 text-xs">Khalid Mohammed</span>
+                                        <span class="text-[9px] text-white bg-orange-400 rounded-full px-1.5 py-0.5 font-bold">WARM 71</span>
+                                    </div>
+                                    <span class="text-slate-400 text-[10px]">Follow-up sent ✓</span>
+                                </div>
+                                <div class="flex items-center justify-between rounded-lg px-3 py-2 bg-slate-50 border border-slate-100">
+                                    <div class="flex items-center gap-2">
+                                        <span class="text-slate-300 text-xs">→</span>
+                                        <span class="text-slate-500 text-xs">+86 more leads</span>
+                                    </div>
+                                    <span class="text-emerald-500 text-[10px]">All sorted & scored ✓</span>
+                                </div>
+                            </div>
+                            <div class="flex items-center gap-2 text-emerald-600 text-[11px]">
+                                <span>✓</span>
+                                <span>88 messages handled while you slept</span>
+                            </div>
+                        </div>
+
+                        <!-- Scene 2: Midday pipeline -->
+                        <div class="rounded-2xl p-4 bg-white border border-emerald-100 shadow-sm">
+                            <div class="flex items-center gap-2 mb-3">
+                                <span class="text-[10px] font-mono text-emerald-600 bg-emerald-50 px-2 py-0.5 rounded border border-emerald-100">⏰ 2:30 PM</span>
+                                <span class="text-slate-400 text-[10px]">On a site visit — phone away</span>
+                            </div>
+                            <!-- Mini kanban -->
+                            <div class="grid grid-cols-3 gap-2 mb-2">
+                                <div class="rounded-lg p-2" style="background:#f0fdf4;border:1px solid #bbf7d0">
+                                    <div class="text-[9px] text-emerald-600 font-bold uppercase mb-1.5">New</div>
+                                    <div class="space-y-1">
+                                        <div class="h-5 rounded bg-emerald-100 text-[9px] flex items-center px-1.5 text-emerald-700">Fatima S. <span class="ml-auto text-emerald-500">AI ✓</span></div>
+                                        <div class="h-5 rounded bg-emerald-100 text-[9px] flex items-center px-1.5 text-emerald-700">Omar A. <span class="ml-auto text-emerald-500">AI ✓</span></div>
+                                    </div>
+                                </div>
+                                <div class="rounded-lg p-2" style="background:#fffbeb;border:1px solid #fde68a">
+                                    <div class="text-[9px] text-amber-600 font-bold uppercase mb-1.5">Viewing</div>
+                                    <div class="space-y-1">
+                                        <div class="h-5 rounded bg-amber-100 text-[9px] flex items-center px-1.5 text-amber-700">Khalid M.</div>
+                                        <div class="h-5 rounded bg-amber-100 text-[9px] flex items-center px-1.5 text-amber-700">Sara H.</div>
+                                    </div>
+                                </div>
+                                <div class="rounded-lg p-2" style="background:#eff6ff;border:1px solid #bfdbfe">
+                                    <div class="text-[9px] text-blue-600 font-bold uppercase mb-1.5">Closing</div>
+                                    <div class="space-y-1">
+                                        <div class="h-5 rounded bg-blue-100 text-[9px] flex items-center px-1.5 text-blue-700 font-bold">Ahmed R. 🔥</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="text-emerald-600 text-[10px]">📅 3 viewings auto-scheduled by AI</div>
+                        </div>
+
+                        <!-- Scene 3: Done by 5pm -->
+                        <div class="rounded-2xl p-4 border-2 border-emerald-400/40" style="background:linear-gradient(135deg,#ecfdf5,#d1fae5)">
+                            <div class="flex items-center justify-between mb-2">
+                                <span class="text-[10px] font-mono text-emerald-700 bg-emerald-100 px-2 py-0.5 rounded">⏰ 5:00 PM</span>
+                                <span class="text-emerald-600 text-xs font-medium">🏠 Heading home</span>
+                            </div>
+                            <div class="flex items-center justify-between">
+                                <div>
+                                    <div class="text-2xl font-black text-emerald-700">3 deals closed</div>
+                                    <div class="text-emerald-600/70 text-xs">today — AI never stopped working</div>
+                                </div>
+                                <div class="text-right">
+                                    <div class="text-lg font-black text-slate-800">+$47,000</div>
+                                    <div class="text-slate-400 text-[10px]">in commissions</div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
                 </div>
             </div>
-            <div class="relative group overflow-hidden">
-                <img src="https://images.unsplash.com/photo-1586724237569-f3d0c1dee8c6?w=600&q=80&auto=format&fit=crop" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" alt="Riyadh" />
-                <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent"></div>
-                <div class="absolute bottom-4 left-4">
-                    <div class="text-white font-bold text-sm">🇸🇦 Riyadh</div>
-                    <div class="text-white/55 text-[10px] uppercase tracking-wider">Saudi Arabia</div>
+
+            <!-- Bottom label -->
+            <div class="flex items-center justify-center gap-4 mt-8 fade-up">
+                <div class="flex items-center gap-2 text-rose-400 text-xs font-medium">
+                    <div class="w-3 h-0.5 bg-rose-400"></div>
+                    Losing $150K/month in missed deals
                 </div>
-            </div>
-            <div class="relative group overflow-hidden">
-                <img src="https://images.unsplash.com/photo-1566024287286-457247b70310?w=600&q=80&auto=format&fit=crop" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" alt="Baghdad" />
-                <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent"></div>
-                <div class="absolute bottom-4 left-4">
-                    <div class="text-white font-bold text-sm">🇮🇶 Baghdad</div>
-                    <div class="text-white/55 text-[10px] uppercase tracking-wider">Iraq</div>
-                </div>
-            </div>
-            <div class="relative group overflow-hidden">
-                <img src="https://images.unsplash.com/photo-1568322445389-f64ac2515020?w=600&q=80&auto=format&fit=crop" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" alt="Cairo" />
-                <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent"></div>
-                <div class="absolute bottom-4 left-4">
-                    <div class="text-white font-bold text-sm">🇪🇬 Cairo</div>
-                    <div class="text-white/55 text-[10px] uppercase tracking-wider">Egypt</div>
-                </div>
-            </div>
-            <div class="relative group overflow-hidden col-span-2 md:col-span-1">
-                <img src="https://images.unsplash.com/photo-1578574577315-3fbeb0cecdc2?w=600&q=80&auto=format&fit=crop" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" alt="Doha" />
-                <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent"></div>
-                <div class="absolute bottom-4 left-4">
-                    <div class="text-white font-bold text-sm">🇶🇦 Doha</div>
-                    <div class="text-white/55 text-[10px] uppercase tracking-wider">Qatar</div>
+                <div class="w-8 h-8 rounded-full bg-slate-200 flex items-center justify-center text-slate-500 font-bold text-lg">→</div>
+                <div class="flex items-center gap-2 text-emerald-600 text-xs font-medium">
+                    Closing 3x more with ZoeyHQ
+                    <div class="w-3 h-0.5 bg-emerald-500"></div>
                 </div>
             </div>
         </div>
