@@ -760,20 +760,54 @@ import Layout from '../layouts/Layout.astro';
     <!-- ═══════════════════════════════════ -->
     <!-- FOOTER                              -->
     <!-- ═══════════════════════════════════ -->
-    <footer class="border-t border-slate-200 py-10 px-6">
-        <div class="max-w-5xl mx-auto flex flex-col md:flex-row justify-between items-center gap-4">
-            <div class="text-center md:text-left">
-                <a href="https://zoeyhq.website" target="_blank" class="font-bold text-lg tracking-widest text-slate-900 hover:text-emerald-600 transition-colors">
-                    ZOEY<span class="text-emerald-500">HQ</span>
-                </a>
-                <p class="text-slate-300 text-[10px] mt-1">Built with passion from the Gulf · © 2025 ZoeyHQ</p>
+    <footer style="background:#050f08;border-top:1px solid rgba(16,185,129,0.15)" class="py-14 px-6">
+        <div class="max-w-5xl mx-auto">
+
+            <!-- Top row: logo + nav -->
+            <div class="flex flex-col md:flex-row justify-between items-start gap-8 mb-10">
+                <div>
+                    <a href="https://zoeyhq.website" target="_blank" class="font-bold text-xl tracking-widest text-white hover:text-emerald-400 transition-colors">
+                        ZOEY<span class="text-emerald-400">HQ</span>
+                    </a>
+                    <p class="text-white/35 text-[11px] mt-2 max-w-xs leading-relaxed">
+                        AI-powered real estate CRM built from the Gulf, for the Arab world.
+                    </p>
+                </div>
+                <div class="flex items-center gap-6">
+                    <a href="https://zoeyhq.website" target="_blank" class="text-white/40 text-xs hover:text-emerald-400 transition-colors">Platform</a>
+                    <a href="#pricing" class="text-white/40 text-xs hover:text-emerald-400 transition-colors">Pricing</a>
+                    <a href="#invest" class="text-white/40 text-xs hover:text-emerald-400 transition-colors">Invest</a>
+                    <a href="mailto:invest@zoeyhq.website" class="text-white/40 text-xs hover:text-emerald-400 transition-colors">Contact</a>
+                </div>
             </div>
-            <div class="flex items-center gap-5">
-                <a href="https://zoeyhq.website" target="_blank" class="text-slate-400 text-xs hover:text-slate-200 transition-colors">Platform</a>
-                <a href="#pricing" class="text-slate-400 text-xs hover:text-slate-900 transition-colors">Pricing</a>
-                <a href="#invest" class="text-slate-400 text-xs hover:text-slate-200 transition-colors">Invest</a>
-                <a href="mailto:invest@zoeyhq.website" class="text-slate-400 text-xs hover:text-emerald-400 transition-colors">Contact</a>
+
+            <!-- Divider -->
+            <div style="height:1px;background:linear-gradient(90deg,transparent,rgba(16,185,129,0.2),transparent)" class="mb-8"></div>
+
+            <!-- Company legal info -->
+            <div class="flex flex-col md:flex-row justify-between items-start md:items-end gap-5">
+                <div class="space-y-1.5">
+                    <div class="text-white/70 text-xs font-semibold tracking-wide uppercase">
+                        Advanced Artificial Intelligence for Trading LLC
+                    </div>
+                    <div class="flex flex-wrap gap-x-5 gap-y-1 text-white/30 text-[11px]">
+                        <span class="flex items-center gap-1.5">
+                            <svg class="w-3 h-3 text-emerald-500/60" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/></svg>
+                            CR No. 1564014
+                        </span>
+                        <span class="flex items-center gap-1.5">
+                            <svg class="w-3 h-3 text-emerald-500/60" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/></svg>
+                            AlKhuwair 33, Muscat, Sultanate of Oman
+                        </span>
+                        <span class="flex items-center gap-1.5">
+                            <svg class="w-3 h-3 text-emerald-500/60" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>
+                            invest@zoeyhq.website
+                        </span>
+                    </div>
+                </div>
+                <p class="text-white/20 text-[10px]">© 2025 ZoeyHQ · All rights reserved</p>
             </div>
+
         </div>
     </footer>
 </Layout>
