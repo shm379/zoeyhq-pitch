@@ -23,58 +23,134 @@ import Layout from '../layouts/Layout.astro';
     </nav>
 
     <!-- ═══════════════════════════════════ -->
-    <!-- HERO                                -->
+    <!-- HERO  (dark photo overlay)         -->
     <!-- ═══════════════════════════════════ -->
     <section class="relative min-h-screen flex items-center justify-center px-6 pt-16 overflow-hidden">
-        <div class="absolute inset-0 pointer-events-none">
-            <div class="absolute w-[50vw] h-[50vw] bg-emerald-600/8 rounded-full blur-[120px] top-1/4 left-1/2 -translate-x-1/2 -translate-y-1/2"></div>
-            <div class="absolute w-[30vw] h-[30vw] bg-teal-600/5 rounded-full blur-[80px] bottom-1/4 right-0"></div>
+        <!-- Background: Dubai Marina at night -->
+        <div class="absolute inset-0">
+            <img
+                src="https://images.unsplash.com/photo-1512453979798-5ea266f8880c?w=1920&q=85&auto=format&fit=crop"
+                class="w-full h-full object-cover"
+                alt="Dubai skyline"
+                loading="eager"
+            />
+            <div class="absolute inset-0 bg-gradient-to-b from-black/75 via-black/50 to-slate-50"></div>
+            <div class="absolute inset-0 bg-emerald-950/15"></div>
         </div>
 
         <div class="relative z-10 max-w-5xl mx-auto text-center fade-up">
-            <div class="inline-flex items-center gap-3 px-5 py-2.5 rounded-full bg-slate-100 border border-slate-200 backdrop-blur-md mb-10">
-                <span class="w-2 h-2 rounded-full bg-emerald-500 animate-pulse shadow-[0_0_10px_#10b981]"></span>
-                <span class="text-xs font-semibold text-slate-600 tracking-widest uppercase">Built from the Gulf · For MENA</span>
+            <div class="inline-flex items-center gap-3 px-5 py-2.5 rounded-full bg-white/10 border border-white/20 backdrop-blur-md mb-10">
+                <span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse shadow-[0_0_12px_#10b981]"></span>
+                <span class="text-xs font-semibold text-white/90 tracking-widest uppercase">Built from the Gulf · For MENA</span>
             </div>
 
-            <h1 class="text-5xl md:text-7xl lg:text-[5.5rem] font-extrabold text-slate-900 mb-8 tracking-tighter leading-[1.05]">
+            <h1 class="text-5xl md:text-7xl lg:text-[5.5rem] font-extrabold text-white mb-8 tracking-tighter leading-[1.05]">
                 The AI That Turns<br>
-                <span class="text-transparent bg-clip-text bg-gradient-to-r from-emerald-400 to-teal-500" style="text-shadow: 0 0 40px rgba(16,185,129,0.2);">Messages into Revenue.</span>
+                <span class="text-transparent bg-clip-text bg-gradient-to-r from-emerald-400 to-teal-300">Messages into Revenue.</span>
             </h1>
 
-            <p class="text-lg md:text-xl text-slate-500 max-w-2xl mx-auto mb-14 font-light leading-relaxed">
-                AI-powered real estate CRM that qualifies leads, drafts replies, and closes deals 24/7 — in Arabic & English.
+            <p class="text-lg md:text-xl text-white/70 max-w-2xl mx-auto mb-12 font-light leading-relaxed">
+                AI-powered real estate CRM that qualifies leads, drafts replies, and closes deals 24/7 — in Arabic &amp; English.
             </p>
 
-            <div class="flex flex-wrap justify-center gap-12 mb-16">
+            <!-- Stats -->
+            <div class="flex flex-wrap justify-center gap-8 md:gap-14 mb-12">
                 <div class="text-center">
-                    <div class="text-4xl md:text-5xl font-black text-slate-900 tracking-tight">24/7</div>
-                    <div class="text-xs text-slate-400 uppercase tracking-wider mt-1">AI Sales Agent</div>
+                    <div class="text-4xl md:text-5xl font-black text-white tracking-tight">24/7</div>
+                    <div class="text-xs text-white/50 uppercase tracking-wider mt-1">AI Sales Agent</div>
                 </div>
                 <div class="text-center">
-                    <div class="text-4xl md:text-5xl font-black text-slate-900 tracking-tight">3x</div>
-                    <div class="text-xs text-slate-400 uppercase tracking-wider mt-1">More Closings</div>
+                    <div class="text-4xl md:text-5xl font-black text-white tracking-tight">3x</div>
+                    <div class="text-xs text-white/50 uppercase tracking-wider mt-1">More Closings</div>
                 </div>
                 <div class="text-center">
-                    <div class="text-4xl md:text-5xl font-black text-slate-900 tracking-tight">90<span class="text-emerald-500 text-2xl">%</span></div>
-                    <div class="text-xs text-slate-400 uppercase tracking-wider mt-1">Faster Response</div>
+                    <div class="text-4xl md:text-5xl font-black text-white tracking-tight">90<span class="text-emerald-400 text-2xl">%</span></div>
+                    <div class="text-xs text-white/50 uppercase tracking-wider mt-1">Faster Response</div>
+                </div>
+                <div class="text-center">
+                    <div class="text-4xl md:text-5xl font-black text-white tracking-tight">$8M</div>
+                    <div class="text-xs text-white/50 uppercase tracking-wider mt-1">Competitor Raised</div>
                 </div>
             </div>
 
-            <div class="flex flex-wrap justify-center gap-3">
-                <span class="px-3 py-1.5 rounded-full bg-slate-100 border border-slate-200 text-slate-600 text-xs">🇦🇪 UAE</span>
-                <span class="px-3 py-1.5 rounded-full bg-slate-100 border border-slate-200 text-slate-600 text-xs">🇴🇲 Oman</span>
-                <span class="px-3 py-1.5 rounded-full bg-slate-100 border border-slate-200 text-slate-600 text-xs">🇸🇦 Saudi</span>
-                <span class="px-3 py-1.5 rounded-full bg-slate-100 border border-slate-200 text-slate-600 text-xs">🇶🇦 Qatar</span>
-                <span class="px-3 py-1.5 rounded-full bg-slate-100 border border-slate-200 text-slate-600 text-xs">🇧🇭 Bahrain</span>
+            <!-- CTAs -->
+            <div class="flex flex-wrap justify-center gap-4 mb-14">
+                <a href="#invest" class="px-7 py-3.5 rounded-full bg-emerald-500 text-black font-bold text-sm hover:bg-emerald-400 transition-all shadow-[0_0_30px_rgba(16,185,129,0.4)] hover:shadow-[0_0_50px_rgba(16,185,129,0.6)]">
+                    Invest in ZoeyHQ →
+                </a>
+                <a href="#solution" class="px-7 py-3.5 rounded-full bg-white/10 border border-white/25 text-white font-medium text-sm hover:bg-white/20 backdrop-blur-sm transition-all">
+                    See How It Works
+                </a>
+            </div>
+
+            <!-- Country badges -->
+            <div class="flex flex-wrap justify-center gap-2">
+                <span class="px-3 py-1.5 rounded-full bg-white/10 border border-white/20 text-white/90 text-xs backdrop-blur-sm">🇦🇪 UAE</span>
+                <span class="px-3 py-1.5 rounded-full bg-white/10 border border-white/20 text-white/90 text-xs backdrop-blur-sm">🇸🇦 Saudi Arabia</span>
+                <span class="px-3 py-1.5 rounded-full bg-white/10 border border-white/20 text-white/90 text-xs backdrop-blur-sm">🇮🇶 Iraq</span>
+                <span class="px-3 py-1.5 rounded-full bg-white/10 border border-white/20 text-white/90 text-xs backdrop-blur-sm">🇰🇼 Kuwait</span>
+                <span class="px-3 py-1.5 rounded-full bg-white/10 border border-white/20 text-white/90 text-xs backdrop-blur-sm">🇶🇦 Qatar</span>
+                <span class="px-3 py-1.5 rounded-full bg-white/10 border border-white/20 text-white/90 text-xs backdrop-blur-sm">🇧🇭 Bahrain</span>
+                <span class="px-3 py-1.5 rounded-full bg-white/10 border border-white/20 text-white/90 text-xs backdrop-blur-sm">🇴🇲 Oman</span>
+                <span class="px-3 py-1.5 rounded-full bg-white/10 border border-white/20 text-white/90 text-xs backdrop-blur-sm">🇪🇬 Egypt</span>
+                <span class="px-3 py-1.5 rounded-full bg-white/10 border border-white/20 text-white/90 text-xs backdrop-blur-sm">🇯�� Jordan</span>
+                <span class="px-3 py-1.5 rounded-full bg-white/10 border border-white/20 text-white/90 text-xs backdrop-blur-sm">🇲🇦 Morocco</span>
+                <span class="px-3 py-1.5 rounded-full bg-white/10 border border-white/20 text-white/90 text-xs backdrop-blur-sm">🇱🇧 Lebanon</span>
             </div>
         </div>
 
-        <!-- Scroll indicator -->
-        <div class="absolute bottom-10 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2 opacity-40">
-            <span class="text-[10px] text-slate-500 uppercase tracking-widest">Scroll</span>
-            <div class="w-5 h-8 rounded-full border border-slate-300 flex items-start justify-center p-1">
-                <div class="w-1 h-2 bg-slate-600 rounded-full animate-bounce"></div>
+        <div class="absolute bottom-10 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2 opacity-50">
+            <span class="text-[10px] text-white uppercase tracking-widest">Scroll</span>
+            <div class="w-5 h-8 rounded-full border border-white/30 flex items-start justify-center p-1">
+                <div class="w-1 h-2 bg-white rounded-full animate-bounce"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══════════════════════════════════ -->
+    <!-- CITY SHOWCASE                       -->
+    <!-- ═══════════════════════════════════ -->
+    <section class="py-0 overflow-hidden border-y border-slate-200">
+        <div class="grid grid-cols-2 md:grid-cols-5" style="height:260px">
+            <div class="relative group overflow-hidden">
+                <img src="https://images.unsplash.com/photo-1582672060674-bc2bd808a8b5?w=600&q=80&auto=format&fit=crop" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" alt="Dubai" />
+                <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent"></div>
+                <div class="absolute bottom-4 left-4">
+                    <div class="text-white font-bold text-sm">🇦🇪 Dubai</div>
+                    <div class="text-white/55 text-[10px] uppercase tracking-wider">UAE</div>
+                </div>
+            </div>
+            <div class="relative group overflow-hidden">
+                <img src="https://images.unsplash.com/photo-1586724237569-f3d0c1dee8c6?w=600&q=80&auto=format&fit=crop" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" alt="Riyadh" />
+                <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent"></div>
+                <div class="absolute bottom-4 left-4">
+                    <div class="text-white font-bold text-sm">🇸🇦 Riyadh</div>
+                    <div class="text-white/55 text-[10px] uppercase tracking-wider">Saudi Arabia</div>
+                </div>
+            </div>
+            <div class="relative group overflow-hidden">
+                <img src="https://images.unsplash.com/photo-1566024287286-457247b70310?w=600&q=80&auto=format&fit=crop" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" alt="Baghdad" />
+                <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent"></div>
+                <div class="absolute bottom-4 left-4">
+                    <div class="text-white font-bold text-sm">🇮🇶 Baghdad</div>
+                    <div class="text-white/55 text-[10px] uppercase tracking-wider">Iraq</div>
+                </div>
+            </div>
+            <div class="relative group overflow-hidden">
+                <img src="https://images.unsplash.com/photo-1568322445389-f64ac2515020?w=600&q=80&auto=format&fit=crop" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" alt="Cairo" />
+                <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent"></div>
+                <div class="absolute bottom-4 left-4">
+                    <div class="text-white font-bold text-sm">🇪🇬 Cairo</div>
+                    <div class="text-white/55 text-[10px] uppercase tracking-wider">Egypt</div>
+                </div>
+            </div>
+            <div class="relative group overflow-hidden col-span-2 md:col-span-1">
+                <img src="https://images.unsplash.com/photo-1578574577315-3fbeb0cecdc2?w=600&q=80&auto=format&fit=crop" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" alt="Doha" />
+                <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent"></div>
+                <div class="absolute bottom-4 left-4">
+                    <div class="text-white font-bold text-sm">🇶🇦 Doha</div>
+                    <div class="text-white/55 text-[10px] uppercase tracking-wider">Qatar</div>
+                </div>
             </div>
         </div>
     </section>
@@ -306,8 +382,9 @@ import Layout from '../layouts/Layout.astro';
             </div>
 
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 fade-up">
-                <div class="card-panel p-6 rounded-2xl hover:border-emerald-500/20 transition-all hover:-translate-y-1 duration-300">
-                    <div class="w-10 h-10 rounded-xl bg-emerald-500/10 border border-emerald-500/20 flex items-center justify-center mb-4">
+                <div class="relative card-panel p-6 rounded-2xl hover:-translate-y-2 transition-all duration-300 overflow-hidden group">
+                    <div class="absolute inset-0 bg-gradient-to-br from-emerald-500/5 to-teal-500/5 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                    <div class="w-10 h-10 rounded-xl bg-emerald-500/10 border border-emerald-500/20 flex items-center justify-center mb-4 group-hover:bg-emerald-500/20 transition-colors">
                         <svg class="w-5 h-5 text-emerald-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9.75 3.104v5.714a2.25 2.25 0 01-.659 1.591L5 14.5M9.75 3.104c-.251.023-.501.05-.75.082m.75-.082a24.301 24.301 0 014.5 0m0 0v5.714c0 .597.237 1.17.659 1.591L19.8 15.3M14.25 3.104c.251.023.501.05.75.082M19.8 15.3l-1.57.393A9.065 9.065 0 0112 15a9.065 9.065 0 00-6.23.693L5 14.5m14.8.8l1.402 1.402c1.232 1.232.65 3.318-1.067 3.611A48.309 48.309 0 0112 21c-2.773 0-5.491-.235-8.135-.687-1.718-.293-2.3-2.379-1.067-3.61L5 14.5"/></svg>
                     </div>
                     <h3 class="text-slate-900 font-bold text-sm mb-2">AI Lead Qualification</h3>
@@ -465,7 +542,7 @@ import Layout from '../layouts/Layout.astro';
         </div>
         <div class="max-w-6xl mx-auto relative z-10">
             <div class="text-center mb-16 fade-up">
-                <span class="text-orange-500 tracking-widest text-xs font-bold uppercase mb-4 block">Market</span>
+                <span class="text-orange-500 tracking-widest text-xs font-bold uppercase mb-4 block">$35B Market · MENA</span>
                 <h2 class="text-4xl md:text-5xl font-extrabold text-slate-900 mb-5 tracking-tight">
                     A Proven, <span class="text-transparent bg-clip-text bg-gradient-to-r from-orange-400 to-amber-500">Massive Market.</span>
                 </h2>
@@ -595,73 +672,76 @@ import Layout from '../layouts/Layout.astro';
     <!-- ═══════════════════════════════════ -->
     <!-- INVESTMENT ASK                      -->
     <!-- ═══════════════════════════════════ -->
-    <section id="invest" class="py-28 px-6 relative">
-        <div class="absolute inset-0 pointer-events-none">
-            <div class="absolute w-[60vw] h-[60vw] bg-emerald-600/3 rounded-full blur-[120px] top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2"></div>
+    <section id="invest" class="py-28 px-6 relative overflow-hidden" style="background:linear-gradient(135deg,#0a0f0a 0%,#0d1a12 40%,#061008 100%)">
+        <!-- Background photo overlay -->
+        <div class="absolute inset-0 opacity-20">
+            <img src="https://images.unsplash.com/photo-1512453979798-5ea266f8880c?w=1920&q=60&auto=format&fit=crop" class="w-full h-full object-cover" alt="" />
         </div>
+        <div class="absolute inset-0 bg-gradient-to-b from-slate-50/0 via-transparent to-transparent pointer-events-none"></div>
+        <div class="absolute inset-0" style="background:radial-gradient(ellipse at 50% 50%, rgba(16,185,129,0.08) 0%, transparent 70%)"></div>
         <div class="max-w-5xl mx-auto relative z-10">
             <div class="text-center mb-16 fade-up">
-                <span class="text-emerald-500 tracking-widest text-xs font-bold uppercase mb-4 block">Seed Round</span>
-                <h2 class="text-4xl md:text-5xl font-extrabold tracking-tight mb-6 leading-tight">
+                <span class="text-emerald-400 tracking-widest text-xs font-bold uppercase mb-4 block">Seed Round</span>
+                <h2 class="text-4xl md:text-5xl font-extrabold tracking-tight mb-6 leading-tight text-white text-white">
                     Fueling the<br>
                     <span class="text-transparent bg-clip-text bg-gradient-to-r from-emerald-400 to-teal-500">AI Real Estate Revolution.</span>
                 </h2>
-                <p class="text-slate-500 text-lg font-light mb-2">
-                    Raising <strong class="text-slate-900 font-bold text-2xl">$100,000</strong> for <strong class="text-slate-900 font-bold text-2xl">10% equity</strong>
+                <p class="text-white/70 text-lg font-light mb-2">
+                    Raising <strong class="text-white font-bold text-2xl">$100,000</strong> for <strong class="text-white font-bold text-2xl">10% equity</strong>
                 </p>
-                <p class="text-slate-400 text-sm font-light">Pre-money valuation: $1M — the earliest, most favorable entry for investors.</p>
+                <p class="text-white/50 text-sm font-light">Pre-money valuation: $1M — the earliest, most favorable entry for investors.</p>
             </div>
 
             <!-- Fund allocation -->
             <div class="grid grid-cols-1 md:grid-cols-3 gap-5 mb-12 fade-up">
-                <div class="card-panel p-7 rounded-2xl border-t-4 border-t-emerald-500 hover:scale-[1.02] transition-transform duration-300">
-                    <div class="text-4xl font-black text-slate-900 mb-1">30<span class="text-lg text-emerald-500">%</span></div>
+                <div class="rounded-2xl p-7 border-t-4 border-t-emerald-500 hover:scale-[1.02] transition-transform duration-300" style="background:rgba(255,255,255,0.05);border:1px solid rgba(255,255,255,0.1)">
+                    <div class="text-4xl font-black text-white mb-1">30<span class="text-lg text-emerald-500">%</span></div>
                     <div class="text-xs text-emerald-400 font-bold mb-2 uppercase tracking-widest">AI & Servers</div>
-                    <p class="text-xs text-slate-500 font-light leading-relaxed">LLM APIs, GPU infrastructure, real-time lead processing across all channels.</p>
+                    <p class="text-xs text-white/50 font-light leading-relaxed">LLM APIs, GPU infrastructure, real-time lead processing across all channels.</p>
                 </div>
-                <div class="card-panel p-7 rounded-2xl border-t-4 border-t-blue-500 hover:scale-[1.02] transition-transform duration-300">
-                    <div class="text-4xl font-black text-slate-900 mb-1">20<span class="text-lg text-blue-500">%</span></div>
+                <div class="rounded-2xl p-7 border-t-4 border-t-blue-500 hover:scale-[1.02] transition-transform duration-300" style="background:rgba(255,255,255,0.05);border:1px solid rgba(255,255,255,0.1)">
+                    <div class="text-4xl font-black text-white mb-1">20<span class="text-lg text-blue-500">%</span></div>
                     <div class="text-xs text-blue-400 font-bold mb-2 uppercase tracking-widest">Dev & Infra</div>
-                    <p class="text-xs text-slate-500 font-light leading-relaxed">Core platform, omnichannel gateways, mobile app, enterprise security.</p>
+                    <p class="text-xs text-white/50 font-light leading-relaxed">Core platform, omnichannel gateways, mobile app, enterprise security.</p>
                 </div>
-                <div class="card-panel p-7 rounded-2xl border-t-4 border-t-orange-500 hover:scale-[1.02] transition-transform duration-300">
-                    <div class="text-4xl font-black text-slate-900 mb-1">50<span class="text-lg text-orange-500">%</span></div>
+                <div class="rounded-2xl p-7 border-t-4 border-t-orange-500 hover:scale-[1.02] transition-transform duration-300" style="background:rgba(255,255,255,0.05);border:1px solid rgba(255,255,255,0.1)">
+                    <div class="text-4xl font-black text-white mb-1">50<span class="text-lg text-orange-500">%</span></div>
                     <div class="text-xs text-orange-400 font-bold mb-2 uppercase tracking-widest">Go-to-Market</div>
-                    <p class="text-xs text-slate-500 font-light leading-relaxed">Market penetration across Gulf states — sales, partnerships, campaigns.</p>
+                    <p class="text-xs text-white/50 font-light leading-relaxed">Market penetration across Gulf states — sales, partnerships, campaigns.</p>
                 </div>
             </div>
 
             <!-- Roadmap -->
-            <div class="card-panel rounded-2xl p-8 mb-12 fade-up">
-                <h3 class="text-lg font-extrabold text-slate-900 mb-8 text-center">Roadmap — What We Deliver</h3>
+            <div class="rounded-2xl p-8 mb-12 fade-up" style="background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.08)">
+                <h3 class="text-lg font-extrabold text-white mb-8 text-center">Roadmap — What We Deliver</h3>
                 <div class="grid grid-cols-2 md:grid-cols-4 gap-5">
                     <div class="text-center">
                         <div class="w-12 h-12 rounded-xl bg-emerald-500/10 border border-emerald-500/20 flex items-center justify-center mx-auto mb-3">
                             <span class="text-emerald-400 font-bold text-sm">Q1</span>
                         </div>
-                        <h4 class="text-slate-900 font-bold text-xs mb-1">Foundation</h4>
-                        <p class="text-slate-400 text-[10px] font-light leading-relaxed">Launch WA+TG integration. Onboard 50 agencies in UAE & Oman.</p>
+                        <h4 class="text-white font-bold text-xs mb-1">Foundation</h4>
+                        <p class="text-white/45 text-[10px] font-light leading-relaxed">Launch WA+TG integration. Onboard 50 agencies in UAE & Oman.</p>
                     </div>
                     <div class="text-center">
                         <div class="w-12 h-12 rounded-xl bg-blue-500/10 border border-blue-500/20 flex items-center justify-center mx-auto mb-3">
                             <span class="text-blue-400 font-bold text-sm">Q2</span>
                         </div>
-                        <h4 class="text-slate-900 font-bold text-xs mb-1">AI Engine</h4>
-                        <p class="text-slate-400 text-[10px] font-light leading-relaxed">Full AI qualification. Smart follow-ups & analytics dashboard.</p>
+                        <h4 class="text-white font-bold text-xs mb-1">AI Engine</h4>
+                        <p class="text-white/45 text-[10px] font-light leading-relaxed">Full AI qualification. Smart follow-ups & analytics dashboard.</p>
                     </div>
                     <div class="text-center">
                         <div class="w-12 h-12 rounded-xl bg-orange-500/10 border border-orange-500/20 flex items-center justify-center mx-auto mb-3">
                             <span class="text-orange-400 font-bold text-sm">Q3</span>
                         </div>
-                        <h4 class="text-slate-900 font-bold text-xs mb-1">Scale</h4>
-                        <p class="text-slate-400 text-[10px] font-light leading-relaxed">Expand to Saudi & Qatar. Launch Instagram. 200+ agencies.</p>
+                        <h4 class="text-white font-bold text-xs mb-1">Scale</h4>
+                        <p class="text-white/45 text-[10px] font-light leading-relaxed">Expand to Saudi & Qatar. Launch Instagram. 200+ agencies.</p>
                     </div>
                     <div class="text-center">
                         <div class="w-12 h-12 rounded-xl bg-purple-500/10 border border-purple-500/20 flex items-center justify-center mx-auto mb-3">
                             <span class="text-purple-400 font-bold text-sm">Q4</span>
                         </div>
-                        <h4 class="text-slate-900 font-bold text-xs mb-1">Revenue</h4>
-                        <p class="text-slate-400 text-[10px] font-light leading-relaxed">Hit MRR targets. Enterprise tier. Prepare for Series A.</p>
+                        <h4 class="text-white font-bold text-xs mb-1">Revenue</h4>
+                        <p class="text-white/45 text-[10px] font-light leading-relaxed">Hit MRR targets. Enterprise tier. Prepare for Series A.</p>
                     </div>
                 </div>
             </div>
@@ -672,7 +752,7 @@ import Layout from '../layouts/Layout.astro';
                     Let's Talk Investment
                     <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6"/></svg>
                 </a>
-                <p class="text-slate-300 text-xs mt-3">invest@zoeyhq.website · Response within 24 hours</p>
+                <p class="text-white/40 text-xs mt-3">invest@zoeyhq.website · Response within 24 hours</p>
             </div>
         </div>
     </section>
