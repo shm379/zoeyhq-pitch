@@ -54,4 +54,109 @@ const { title } = Astro.props;
 		border: 1px solid #e2e8f0;
 		box-shadow: 0 1px 3px rgba(0,0,0,0.06), 0 4px 16px rgba(0,0,0,0.04);
 	}
+
+	/* ═══════════════════════════════════════════════
+	   PRINT / PDF STYLES
+	   Each section = one A4 landscape page
+	═══════════════════════════════════════════════ */
+	@media print {
+		/* Force color/background printing */
+		* {
+			-webkit-print-color-adjust: exact !important;
+			print-color-adjust: exact !important;
+			color-adjust: exact !important;
+		}
+
+		@page {
+			size: A4 landscape;
+			margin: 0;
+		}
+
+		html, body {
+			width: 297mm;
+			height: 210mm;
+			margin: 0;
+			padding: 0;
+			background: #f8fafc !important;
+		}
+
+		/* Hide browser chrome & navigation */
+		nav,
+		.noise-overlay,
+		.animate-bounce,
+		.animate-pulse {
+			display: none !important;
+		}
+
+		/* Every section = one page */
+		section {
+			page-break-after: always !important;
+			break-after: page !important;
+			page-break-inside: avoid !important;
+			break-inside: avoid !important;
+			min-height: 210mm !important;
+			max-height: 210mm !important;
+			width: 297mm !important;
+			overflow: hidden !important;
+			display: flex !important;
+			flex-direction: column !important;
+			justify-content: center !important;
+			padding: 12mm 20mm !important;
+			position: relative !important;
+			box-sizing: border-box !important;
+		}
+
+		/* Hero: keep dark photo background */
+		section:first-of-type {
+			padding-top: 10mm !important;
+		}
+
+		/* City showcase: compact photo grid */
+		section.city-showcase {
+			padding: 0 !important;
+			min-height: 80mm !important;
+			max-height: 80mm !important;
+		}
+
+		/* Footer: minimal height */
+		footer {
+			page-break-after: always !important;
+			break-after: page !important;
+			min-height: 210mm !important;
+			max-height: 210mm !important;
+			display: flex !important;
+			align-items: center !important;
+			padding: 20mm !important;
+		}
+
+		/* Prevent internal breaks inside cards */
+		.card-panel,
+		table,
+		.grid {
+			page-break-inside: avoid !important;
+			break-inside: avoid !important;
+		}
+
+		/* Scale down grid gaps for print */
+		.gap-5 { gap: 8px !important; }
+		.gap-8 { gap: 12px !important; }
+		.py-28 { padding-top: 0 !important; padding-bottom: 0 !important; }
+
+		/* Ensure background images show */
+		[style*="background"] {
+			-webkit-print-color-adjust: exact !important;
+		}
+
+		/* Reduce font sizes slightly to fit content */
+		.text-7xl, .lg\:text-\[5\.5rem\] { font-size: 3.5rem !important; line-height: 1.1 !important; }
+		.text-5xl { font-size: 2.5rem !important; }
+		.text-4xl { font-size: 2rem !important; }
+		.text-\[5\.5rem\] { font-size: 3.5rem !important; }
+
+		/* Scrollbar hidden */
+		::-webkit-scrollbar { display: none !important; }
+
+		/* Links print as text */
+		a[href]:after { content: none !important; }
+	}
 </style>
