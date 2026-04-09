@@ -13,6 +13,10 @@ const { title } = Astro.props;
 		<meta name="viewport" content="width=device-width" />
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 		<title>{title}</title>
+		<meta name="description" content="ZoeyHQ — The AI-powered real estate CRM built from the Gulf for MENA. Qualify leads, close deals, and never miss a follow-up across WhatsApp, Telegram & Instagram.">
+		<meta property="og:title" content="ZoeyHQ | AI Real Estate CRM for MENA">
+		<meta property="og:description" content="The AI-powered real estate platform that qualifies leads 24/7 in Arabic, English & Farsi.">
+		<meta property="og:type" content="website">
 		
 		<link rel="preconnect" href="https://fonts.googleapis.com">
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -26,22 +30,24 @@ const { title } = Astro.props;
 </html>
 
 <style is:global>
-	/* Cinematic Film Grain Overlay */
+	/* Optimized Noise Overlay */
 	.noise-overlay {
 		position: fixed;
 		top: 0; left: 0; width: 100vw; height: 100vh;
 		pointer-events: none;
 		z-index: 9999;
-		opacity: 0.06;
-		background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.65' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E");
+		opacity: 0.04;
+		background-image: url("https://grainy-gradients.vercel.app/noise.svg");
+		background-repeat: repeat;
+		mix-blend-mode: overlay;
 	}
 
 	/* Performance Optimizations */
 	.will-change-transform { 
-		will-change: transform, opacity, filter; 
+		will-change: transform, opacity; 
 		backface-visibility: hidden;
 	}
-	.gpu-accelerated { transform: translateZ(0); }
+	.gpu-accelerated { transform: translate3d(0,0,0); }
 	
 	/* Scrollbar */
 	::-webkit-scrollbar { width: 6px; }
@@ -50,16 +56,16 @@ const { title } = Astro.props;
 	::-webkit-scrollbar-thumb:hover { background: #555; }
 
 	/* Typography Glows */
-	.glow-text-emerald { text-shadow: 0 0 40px rgba(16, 185, 129, 0.4); }
-	.glow-text-orange { text-shadow: 0 0 40px rgba(249, 115, 22, 0.4); }
+	.glow-text-emerald { text-shadow: 0 0 30px rgba(16, 185, 129, 0.3); }
+	.glow-text-orange { text-shadow: 0 0 30px rgba(249, 115, 22, 0.3); }
 
 	/* Glassmorphism Panels */
 	.glass-panel {
-		background: rgba(255, 255, 255, 0.02);
-		backdrop-filter: blur(24px);
-		-webkit-backdrop-filter: blur(24px);
-		border: 1px solid rgba(255, 255, 255, 0.08);
-		box-shadow: 0 30px 60px rgba(0,0,0,0.5), inset 0 1px 0 rgba(255,255,255,0.1);
+		background: rgba(255, 255, 255, 0.03);
+		backdrop-filter: blur(12px);
+		-webkit-backdrop-filter: blur(12px);
+		border: 1px solid rgba(255, 255, 255, 0.1);
+		box-shadow: 0 20px 40px rgba(0,0,0,0.4), inset 0 1px 0 rgba(255,255,255,0.05);
 	}
 
 	/* GPU Optimized AI Scanner Line */

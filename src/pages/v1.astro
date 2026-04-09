@@ -1,0 +1,750 @@
+---
+import Layout from '../layouts/Layout.astro';
+---
+
+<Layout title="ZoeyHQ | AI-Powered Real Estate CRM — Pitch Deck">
+    <nav class="fixed top-0 w-full p-6 z-50 flex justify-between items-center mix-blend-difference">
+        <a href="https://zoeyhq.website" target="_blank" class="font-bold text-xl tracking-widest text-white hover:text-emerald-400 transition-colors">
+            ZOEY<span class="text-emerald-500">HQ</span>
+        </a>
+        <div class="flex items-center gap-4">
+            <a href="#pricing" class="hidden md:inline text-white/60 text-sm hover:text-white transition-colors">Plans</a>
+            <a href="#compare" class="hidden md:inline text-white/60 text-sm hover:text-white transition-colors">Compare</a>
+            <a href="#invest" class="px-5 py-2 rounded-full border border-white/20 text-white text-sm hover:bg-white hover:text-black transition-all font-medium">Invest Now</a>
+        </div>
+    </nav>
+
+    <!-- ════════════════════════════════════════════════ -->
+    <!-- SECTION 1: GSAP Pinned Story                    -->
+    <!-- ════════════════════════════════════════════════ -->
+    <div id="story-pin" class="relative w-full h-screen bg-dark overflow-hidden flex items-center justify-center">
+        
+        <div class="absolute inset-0 flex items-center justify-center pointer-events-none z-0 mix-blend-screen overflow-hidden">
+            <div class="orb-hero absolute w-[60vw] h-[60vw] bg-slate-800/30 rounded-full blur-[80px] opacity-100 gpu-accelerated"></div>
+            <div class="orb-chaos absolute w-[50vw] h-[50vw] bg-rose-600/15 rounded-full blur-[80px] opacity-0 translate-x-1/4 -translate-y-1/4 gpu-accelerated"></div>
+            <div class="orb-solution absolute w-[45vw] h-[45vw] bg-emerald-600/15 rounded-full blur-[80px] opacity-0 -translate-x-1/4 translate-y-1/4 gpu-accelerated"></div>
+            <div class="orb-features absolute w-[55vw] h-[55vw] bg-orange-600/10 rounded-full blur-[80px] opacity-0 gpu-accelerated"></div>
+        </div>
+
+        <!-- Hero -->
+        <div class="scene-hero absolute inset-0 w-full h-full flex flex-col items-center justify-center z-10 px-6 will-change-transform">
+            <div class="inline-flex items-center gap-3 px-4 py-2 rounded-full bg-white/5 border border-white/10 backdrop-blur-md mb-8">
+                <span class="w-2 h-2 rounded-full bg-emerald-500 animate-pulse shadow-[0_0_10px_#10b981]"></span>
+                <span class="text-xs font-semibold text-white/80 tracking-widest uppercase">Built from the Gulf · For MENA</span>
+            </div>
+            <h1 class="text-5xl md:text-7xl lg:text-8xl font-extrabold text-white mb-6 text-center tracking-tighter leading-[1.1]">
+                Watch a Message <br>
+                <span class="text-transparent bg-clip-text bg-gradient-to-r from-emerald-400 to-teal-600 glow-text-emerald">Turn into Revenue.</span>
+            </h1>
+            <p class="text-lg md:text-xl text-white/50 text-center max-w-2xl px-4 mb-12 font-light">
+                The AI-powered real estate CRM that qualifies leads, closes deals, and never sleeps. In Arabic, English & Farsi.
+            </p>
+            <div class="flex flex-wrap justify-center gap-8 text-center">
+                <div><div class="text-3xl font-black text-white">24/7</div><div class="text-xs text-white/40 uppercase tracking-wider">AI Agent</div></div>
+                <div><div class="text-3xl font-black text-white">3x</div><div class="text-xs text-white/40 uppercase tracking-wider">More Closings</div></div>
+                <div><div class="text-3xl font-black text-white">90<span class="text-emerald-500">%</span></div><div class="text-xs text-white/40 uppercase tracking-wider">Faster Response</div></div>
+            </div>
+        </div>
+
+        <!-- Chaos -->
+        <div class="scene-chaos absolute inset-0 w-full h-full flex items-center justify-center z-20 opacity-0 pointer-events-none px-6 lg:px-20 will-change-transform">
+            <div class="w-full max-w-7xl flex flex-col lg:flex-row items-center gap-12">
+                <div class="w-full lg:w-1/2">
+                    <span class="text-rose-500 tracking-widest text-xs font-bold uppercase mb-4 block">Stage 01 / The Raw Input</span>
+                    <h2 class="text-4xl md:text-6xl font-extrabold text-white mb-6 leading-tight tracking-tight">
+                        The Noise <br><span class="text-rose-400">Before Zoey.</span>
+                    </h2>
+                    <p class="text-white/60 text-lg md:text-xl font-light leading-relaxed">
+                        A raw message arrives in your WhatsApp. In a normal day, this message gets lost among hundreds of notifications and spam.
+                    </p>
+                </div>
+                <div class="w-full lg:w-1/2 h-[400px] relative perspective-[1000px]">
+                    <div class="target-message absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 glass-panel p-5 rounded-3xl border-emerald-500/50 shadow-[0_0_50px_rgba(16,185,129,0.2)] w-80">
+                        <div class="flex items-center gap-3 mb-3">
+                            <div class="w-8 h-8 rounded-full bg-[#25D366]/20 flex items-center justify-center border border-[#25D366]/50">
+                                <span class="text-[#25D366] text-xs font-bold">WA</span>
+                            </div>
+                            <div>
+                                <h4 class="text-white text-sm font-bold">New Inquiry</h4>
+                                <p class="text-white/40 text-xs">WhatsApp +971 55 XXX XXXX</p>
+                            </div>
+                        </div>
+                        <p class="text-white/80 text-sm italic">"Hi, I'm a cash buyer looking at the luxury villa downtown. What's the final price?"</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Journey -->
+        <div class="scene-journey absolute inset-0 w-full h-full flex items-center justify-center z-30 opacity-0 pointer-events-none px-6 lg:px-20 will-change-transform">
+            <div class="w-full max-w-7xl flex flex-col-reverse lg:flex-row items-center gap-12">
+                <div class="w-full lg:w-1/2 h-[500px] relative perspective-[1200px] flex items-center justify-center">
+                    <div class="solution-dash glass-panel w-full max-w-md rounded-3xl p-1 flex flex-col transform rotate-y-6 rotate-x-3 overflow-hidden">
+                        <div class="bg-white/5 h-12 border-b border-white/10 flex items-center px-5 justify-between">
+                            <div class="text-[10px] font-bold tracking-widest text-emerald-400 uppercase">ZoeyHQ Intelligence Engine</div>
+                            <div class="w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></div>
+                        </div>
+                        <div class="flex-1 p-5 space-y-4 relative">
+                            <div class="msg-card relative bg-white/[0.03] rounded-xl p-5 border border-white/10 opacity-0 translate-y-10 overflow-hidden">
+                                <div class="scanner-bar absolute left-0 w-full z-20 opacity-0 scanner-beam pointer-events-none"></div>
+                                <div class="flex items-start gap-4 relative z-10">
+                                    <div class="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center text-white/50 font-bold text-xs ring-2 ring-white/5">CB</div>
+                                    <div class="flex-1">
+                                        <div class="flex justify-between items-center mb-2">
+                                            <h4 class="font-medium text-white/90 text-sm">Cash Buyer</h4>
+                                            <span class="text-[10px] text-white/30">Just now</span>
+                                        </div>
+                                        <p class="text-white/60 text-sm font-light leading-relaxed">"Hi, I'm a cash buyer looking at the luxury villa downtown. What's the final price?"</p>
+                                    </div>
+                                </div>
+                                <div class="ai-analysis-wrapper h-0 overflow-hidden opacity-0 relative z-10">
+                                    <div class="mt-4 pt-4 border-t border-white/5">
+                                        <div class="grid grid-cols-2 gap-2 mb-3">
+                                            <div class="bg-black/40 rounded p-2 border border-white/5">
+                                                <div class="text-[9px] text-white/40 uppercase mb-1">Intent</div>
+                                                <div class="text-xs text-emerald-400 font-mono">Purchase / Viewing</div>
+                                            </div>
+                                            <div class="bg-black/40 rounded p-2 border border-white/5">
+                                                <div class="text-[9px] text-white/40 uppercase mb-1">Status</div>
+                                                <div class="text-xs text-orange-400 font-mono">Cash Ready</div>
+                                            </div>
+                                        </div>
+                                        <div class="bg-emerald-900/20 rounded-lg p-3 text-xs text-white/70 border border-emerald-500/20 italic">
+                                            "Hello! The villa is currently available at $1.5M. I have priority slots open for cash buyers today. Should I book a private tour for you?"
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="w-full lg:w-1/2 relative h-[250px]">
+                    <div class="flow-text-1 absolute w-full opacity-100">
+                        <span class="text-emerald-500 tracking-widest text-xs font-bold uppercase mb-4 block">Stage 02 / Ingestion</span>
+                        <h2 class="text-4xl md:text-5xl font-extrabold text-white mb-4 leading-tight">Instant Capture.</h2>
+                        <p class="text-white/60 text-lg font-light leading-relaxed">The message is pulled from the chaos directly into the ZoeyHQ Dashboard.</p>
+                    </div>
+                    <div class="flow-text-2 absolute w-full opacity-0 translate-y-10">
+                        <span class="text-emerald-500 tracking-widest text-xs font-bold uppercase mb-4 block">Stage 03 / Analysis</span>
+                        <h2 class="text-4xl md:text-5xl font-extrabold text-white mb-4 leading-tight">Deep Analysis.</h2>
+                        <p class="text-white/60 text-lg font-light leading-relaxed">The Neural Engine scans the text and identifies the intent as high-priority.</p>
+                    </div>
+                    <div class="flow-text-3 absolute w-full opacity-0 translate-y-10">
+                        <span class="text-orange-500 tracking-widest text-xs font-bold uppercase mb-4 block">Stage 04 / Conversion</span>
+                        <h2 class="text-4xl md:text-5xl font-extrabold text-white mb-4 leading-tight">Converted to <br><span class="text-transparent bg-clip-text bg-gradient-to-r from-orange-400 to-amber-500 glow-text-orange">Revenue.</span></h2>
+                        <p class="text-white/60 text-lg font-light leading-relaxed">Zoey generates a personalized reply. The message is now a fully qualified Hot Lead.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Transition slide (replaces old scene-ask, now just a bridge) -->
+        <div class="scene-ask absolute inset-0 w-full h-full flex flex-col items-center justify-center z-40 opacity-0 pointer-events-none px-6 bg-dark will-change-transform">
+            <div class="text-center z-10 max-w-4xl mx-auto w-full">
+                <div class="inline-flex items-center gap-3 px-4 py-2 rounded-full bg-emerald-500/10 border border-emerald-500/20 backdrop-blur-md mb-8">
+                    <span class="text-xs font-semibold text-emerald-400 tracking-widest uppercase">من خلیج · برای خلیج</span>
+                </div>
+                <h2 class="text-4xl md:text-6xl lg:text-7xl font-extrabold tracking-tight mb-6 leading-tight">
+                    Built from the Gulf,<br>
+                    <span class="text-transparent bg-clip-text bg-gradient-to-r from-emerald-400 to-teal-500 glow-text-emerald">For the Gulf & MENA.</span>
+                </h2>
+                <p class="text-white/60 text-xl md:text-2xl font-light mb-8 leading-relaxed max-w-3xl mx-auto">
+                    The only AI real estate platform engineered natively for Arabic, English & Farsi — with deep understanding of Gulf business culture and compliance.
+                </p>
+                <div class="flex flex-wrap justify-center gap-4">
+                    <span class="px-4 py-2 rounded-full bg-white/5 border border-white/10 text-white/70 text-sm">🇦🇪 UAE</span>
+                    <span class="px-4 py-2 rounded-full bg-white/5 border border-white/10 text-white/70 text-sm">🇴🇲 Oman</span>
+                    <span class="px-4 py-2 rounded-full bg-white/5 border border-white/10 text-white/70 text-sm">🇸🇦 Saudi</span>
+                    <span class="px-4 py-2 rounded-full bg-white/5 border border-white/10 text-white/70 text-sm">🇶🇦 Qatar</span>
+                    <span class="px-4 py-2 rounded-full bg-white/5 border border-white/10 text-white/70 text-sm">🇧🇭 Bahrain</span>
+                    <span class="px-4 py-2 rounded-full bg-white/5 border border-white/10 text-white/70 text-sm">🇮🇷 Iran</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ════════════════════════════════════════════════ -->
+    <!-- SECTION 2: Features                             -->
+    <!-- ════════════════════════════════════════════════ -->
+    <section id="features" class="relative py-32 px-6 bg-dark overflow-hidden">
+        <div class="absolute inset-0 pointer-events-none">
+            <div class="absolute w-[40vw] h-[40vw] bg-emerald-600/5 rounded-full blur-[100px] -top-20 -left-20"></div>
+            <div class="absolute w-[30vw] h-[30vw] bg-blue-600/5 rounded-full blur-[100px] bottom-0 right-0"></div>
+        </div>
+        <div class="max-w-7xl mx-auto relative z-10">
+            <div class="text-center mb-20">
+                <span class="text-emerald-500 tracking-widest text-xs font-bold uppercase mb-4 block">Platform Capabilities</span>
+                <h2 class="text-4xl md:text-6xl font-extrabold text-white mb-6 tracking-tight">
+                    Everything You Need.<br>
+                    <span class="text-white/40">Nothing You Don't.</span>
+                </h2>
+                <p class="text-white/50 text-lg max-w-2xl mx-auto font-light">One platform to capture, qualify, nurture, and convert every lead — across every channel your clients use.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <!-- Feature 1 -->
+                <div class="feature-card group">
+                    <div class="w-12 h-12 rounded-2xl bg-emerald-500/10 border border-emerald-500/20 flex items-center justify-center mb-5 group-hover:bg-emerald-500/20 transition-colors">
+                        <svg class="w-6 h-6 text-emerald-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9.75 3.104v5.714a2.25 2.25 0 01-.659 1.591L5 14.5M9.75 3.104c-.251.023-.501.05-.75.082m.75-.082a24.301 24.301 0 014.5 0m0 0v5.714c0 .597.237 1.17.659 1.591L19.8 15.3M14.25 3.104c.251.023.501.05.75.082M19.8 15.3l-1.57.393A9.065 9.065 0 0112 15a9.065 9.065 0 00-6.23.693L5 14.5m14.8.8l1.402 1.402c1.232 1.232.65 3.318-1.067 3.611A48.309 48.309 0 0112 21c-2.773 0-5.491-.235-8.135-.687-1.718-.293-2.3-2.379-1.067-3.61L5 14.5"/></svg>
+                    </div>
+                    <h3 class="text-white font-bold text-lg mb-2">AI Lead Qualification</h3>
+                    <p class="text-white/50 text-sm font-light leading-relaxed">Instantly scores every inquiry. Budget, timeline, intent — all analyzed in real-time. Only serious buyers reach your agents.</p>
+                    <div class="mt-4 flex items-center gap-2">
+                        <span class="px-2 py-1 rounded bg-emerald-500/10 text-emerald-400 text-[10px] font-bold">SMART SCORING</span>
+                        <span class="px-2 py-1 rounded bg-white/5 text-white/40 text-[10px] font-bold">24/7</span>
+                    </div>
+                </div>
+
+                <!-- Feature 2 -->
+                <div class="feature-card group">
+                    <div class="w-12 h-12 rounded-2xl bg-blue-500/10 border border-blue-500/20 flex items-center justify-center mb-5 group-hover:bg-blue-500/20 transition-colors">
+                        <svg class="w-6 h-6 text-blue-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M20.25 8.511c.884.284 1.5 1.128 1.5 2.097v4.286c0 1.136-.847 2.1-1.98 2.193-.34.027-.68.052-1.02.072v3.091l-3-3c-1.354 0-2.694-.055-4.02-.163a2.115 2.115 0 01-.825-.242m9.345-8.334a2.126 2.126 0 00-.476-.095 48.64 48.64 0 00-8.048 0c-1.131.094-1.976 1.057-1.976 2.192v4.286c0 .837.46 1.58 1.155 1.951m9.345-8.334V6.637c0-1.621-1.152-3.026-2.76-3.235A48.455 48.455 0 0011.25 3c-2.115 0-4.198.137-6.24.402-1.608.209-2.76 1.614-2.76 3.235v6.226c0 1.621 1.152 3.026 2.76 3.235.577.075 1.157.14 1.74.194V21l4.155-4.155"/></svg>
+                    </div>
+                    <h3 class="text-white font-bold text-lg mb-2">Omnichannel Inbox</h3>
+                    <p class="text-white/50 text-sm font-light leading-relaxed">WhatsApp, Telegram, Instagram, SMS — all conversations unified in one powerful dashboard. Never miss a lead again.</p>
+                    <div class="mt-4 flex items-center gap-2">
+                        <span class="px-2 py-1 rounded bg-[#25D366]/10 text-[#25D366] text-[10px] font-bold">WHATSAPP</span>
+                        <span class="px-2 py-1 rounded bg-blue-500/10 text-blue-400 text-[10px] font-bold">TELEGRAM</span>
+                        <span class="px-2 py-1 rounded bg-pink-500/10 text-pink-400 text-[10px] font-bold">INSTAGRAM</span>
+                    </div>
+                </div>
+
+                <!-- Feature 3 -->
+                <div class="feature-card group">
+                    <div class="w-12 h-12 rounded-2xl bg-orange-500/10 border border-orange-500/20 flex items-center justify-center mb-5 group-hover:bg-orange-500/20 transition-colors">
+                        <svg class="w-6 h-6 text-orange-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M3.75 3v11.25A2.25 2.25 0 006 16.5h2.25M3.75 3h-1.5m1.5 0h16.5m0 0h1.5m-1.5 0v11.25A2.25 2.25 0 0118 16.5h-2.25m-7.5 0h7.5m-7.5 0l-1 3m8.5-3l1 3m0 0l.5 1.5m-.5-1.5h-9.5m0 0l-.5 1.5M9 11.25v1.5M12 9v3.75m3-6v6"/></svg>
+                    </div>
+                    <h3 class="text-white font-bold text-lg mb-2">Smart CRM Pipeline</h3>
+                    <p class="text-white/50 text-sm font-light leading-relaxed">Visual Kanban boards with AI-powered stage progression. Every lead automatically flows through your custom pipeline.</p>
+                    <div class="mt-4 flex items-center gap-2">
+                        <span class="px-2 py-1 rounded bg-orange-500/10 text-orange-400 text-[10px] font-bold">KANBAN</span>
+                        <span class="px-2 py-1 rounded bg-white/5 text-white/40 text-[10px] font-bold">AUTO-ASSIGN</span>
+                    </div>
+                </div>
+
+                <!-- Feature 4 -->
+                <div class="feature-card group">
+                    <div class="w-12 h-12 rounded-2xl bg-purple-500/10 border border-purple-500/20 flex items-center justify-center mb-5 group-hover:bg-purple-500/20 transition-colors">
+                        <svg class="w-6 h-6 text-purple-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M16.023 9.348h4.992v-.001M2.985 19.644v-4.992m0 0h4.992m-4.993 0l3.181 3.183a8.25 8.25 0 0013.803-3.7M4.031 9.865a8.25 8.25 0 0113.803-3.7l3.181 3.182"/></svg>
+                    </div>
+                    <h3 class="text-white font-bold text-lg mb-2">Auto Follow-ups</h3>
+                    <p class="text-white/50 text-sm font-light leading-relaxed">AI-drafted follow-ups sent at the perfect time. Re-engage cold leads compliantly within WhatsApp's 24-hour window.</p>
+                    <div class="mt-4 flex items-center gap-2">
+                        <span class="px-2 py-1 rounded bg-purple-500/10 text-purple-400 text-[10px] font-bold">COMPLIANT</span>
+                        <span class="px-2 py-1 rounded bg-white/5 text-white/40 text-[10px] font-bold">TEMPLATES</span>
+                    </div>
+                </div>
+
+                <!-- Feature 5 -->
+                <div class="feature-card group">
+                    <div class="w-12 h-12 rounded-2xl bg-cyan-500/10 border border-cyan-500/20 flex items-center justify-center mb-5 group-hover:bg-cyan-500/20 transition-colors">
+                        <svg class="w-6 h-6 text-cyan-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M10.5 21l5.25-11.25L21 21m-9-3h7.5M3 5.621a48.474 48.474 0 016-.371m0 0c1.12 0 2.233.038 3.334.114M9 5.25V3m3.334 2.364C11.176 10.658 7.69 15.08 3 17.502m9.334-12.138c.896.061 1.785.147 2.666.257m-4.589 8.495a18.023 18.023 0 01-3.827-5.802"/></svg>
+                    </div>
+                    <h3 class="text-white font-bold text-lg mb-2">Native Multilingual</h3>
+                    <p class="text-white/50 text-sm font-light leading-relaxed">Not just translated — natively built for Arabic (RTL), English, and Farsi. Understands Gulf dialects, slang, and business etiquette.</p>
+                    <div class="mt-4 flex items-center gap-2">
+                        <span class="px-2 py-1 rounded bg-cyan-500/10 text-cyan-400 text-[10px] font-bold">عربي</span>
+                        <span class="px-2 py-1 rounded bg-white/5 text-white/40 text-[10px] font-bold">EN</span>
+                        <span class="px-2 py-1 rounded bg-white/5 text-white/40 text-[10px] font-bold">فارسی</span>
+                    </div>
+                </div>
+
+                <!-- Feature 6 -->
+                <div class="feature-card group">
+                    <div class="w-12 h-12 rounded-2xl bg-rose-500/10 border border-rose-500/20 flex items-center justify-center mb-5 group-hover:bg-rose-500/20 transition-colors">
+                        <svg class="w-6 h-6 text-rose-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M3 13.125C3 12.504 3.504 12 4.125 12h2.25c.621 0 1.125.504 1.125 1.125v6.75C7.5 20.496 6.996 21 6.375 21h-2.25A1.125 1.125 0 013 19.875v-6.75zM9.75 8.625c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125v11.25c0 .621-.504 1.125-1.125 1.125h-2.25a1.125 1.125 0 01-1.125-1.125V8.625zM16.5 4.125c0-.621.504-1.125 1.125-1.125h2.25C20.496 3 21 3.504 21 4.125v15.75c0 .621-.504 1.125-1.125 1.125h-2.25a1.125 1.125 0 01-1.125-1.125V4.125z"/></svg>
+                    </div>
+                    <h3 class="text-white font-bold text-lg mb-2">Real-time Analytics</h3>
+                    <p class="text-white/50 text-sm font-light leading-relaxed">Response times, conversion rates, agent performance, revenue attribution. Make data-driven decisions, not guesses.</p>
+                    <div class="mt-4 flex items-center gap-2">
+                        <span class="px-2 py-1 rounded bg-rose-500/10 text-rose-400 text-[10px] font-bold">LIVE DASHBOARD</span>
+                        <span class="px-2 py-1 rounded bg-white/5 text-white/40 text-[10px] font-bold">EXPORT</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ════════════════════════════════════════════════ -->
+    <!-- SECTION 3: Competitor Comparison                 -->
+    <!-- ════════════════════════════════════════════════ -->
+    <section id="compare" class="relative py-32 px-6 bg-dark overflow-hidden">
+        <div class="absolute inset-0 pointer-events-none">
+            <div class="absolute w-[50vw] h-[50vw] bg-emerald-600/3 rounded-full blur-[120px] top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2"></div>
+        </div>
+        <div class="max-w-6xl mx-auto relative z-10">
+            <div class="text-center mb-16">
+                <span class="text-emerald-500 tracking-widest text-xs font-bold uppercase mb-4 block">Competitive Landscape</span>
+                <h2 class="text-4xl md:text-6xl font-extrabold text-white mb-6 tracking-tight">
+                    See How We <span class="text-transparent bg-clip-text bg-gradient-to-r from-emerald-400 to-teal-500">Compare.</span>
+                </h2>
+                <p class="text-white/50 text-lg max-w-2xl mx-auto font-light">We studied every competitor in the MENA real estate AI space. Here's why ZoeyHQ is different.</p>
+            </div>
+
+            <div class="overflow-x-auto rounded-3xl border border-white/10 bg-white/[0.02] backdrop-blur-sm">
+                <table class="w-full min-w-[700px] text-sm">
+                    <thead>
+                        <tr class="border-b border-white/10">
+                            <th class="text-left p-5 text-white/40 font-medium text-xs uppercase tracking-wider">Feature</th>
+                            <th class="p-5 text-center">
+                                <div class="text-emerald-400 font-bold text-base">ZoeyHQ</div>
+                                <div class="text-emerald-500/50 text-[10px]">YOU ARE HERE</div>
+                            </th>
+                            <th class="p-5 text-center text-white/60 font-medium">Gene.so</th>
+                            <th class="p-5 text-center text-white/60 font-medium">Conversure</th>
+                            <th class="p-5 text-center text-white/60 font-medium">Sift</th>
+                            <th class="p-5 text-center text-white/60 font-medium">WaviCRM</th>
+                        </tr>
+                    </thead>
+                    <tbody class="divide-y divide-white/5">
+                        <tr class="hover:bg-white/[0.02] transition-colors">
+                            <td class="p-4 text-white/70 font-medium">AI Lead Qualification</td>
+                            <td class="p-4 text-center text-emerald-400 text-lg">✓</td>
+                            <td class="p-4 text-center text-white/40 text-lg">✓</td>
+                            <td class="p-4 text-center text-white/20 text-lg">✗</td>
+                            <td class="p-4 text-center text-white/40 text-lg">✓</td>
+                            <td class="p-4 text-center text-white/20 text-lg">✗</td>
+                        </tr>
+                        <tr class="hover:bg-white/[0.02] transition-colors">
+                            <td class="p-4 text-white/70 font-medium">Omnichannel (WA + TG + IG)</td>
+                            <td class="p-4 text-center text-emerald-400 text-lg">✓</td>
+                            <td class="p-4 text-center text-white/20 text-lg">✗</td>
+                            <td class="p-4 text-center text-white/40 text-lg">~</td>
+                            <td class="p-4 text-center text-white/20 text-lg">✗</td>
+                            <td class="p-4 text-center text-white/40 text-lg">~</td>
+                        </tr>
+                        <tr class="hover:bg-white/[0.02] transition-colors">
+                            <td class="p-4 text-white/70 font-medium">Built-in CRM Pipeline</td>
+                            <td class="p-4 text-center text-emerald-400 text-lg">✓</td>
+                            <td class="p-4 text-center text-white/20 text-lg">✗</td>
+                            <td class="p-4 text-center text-white/20 text-lg">✗</td>
+                            <td class="p-4 text-center text-white/20 text-lg">✗</td>
+                            <td class="p-4 text-center text-white/40 text-lg">✓</td>
+                        </tr>
+                        <tr class="hover:bg-white/[0.02] transition-colors">
+                            <td class="p-4 text-white/70 font-medium">Arabic / Farsi Native</td>
+                            <td class="p-4 text-center text-emerald-400 text-lg">✓</td>
+                            <td class="p-4 text-center text-white/40 text-lg">~</td>
+                            <td class="p-4 text-center text-white/20 text-lg">✗</td>
+                            <td class="p-4 text-center text-white/40 text-lg">~</td>
+                            <td class="p-4 text-center text-white/20 text-lg">✗</td>
+                        </tr>
+                        <tr class="hover:bg-white/[0.02] transition-colors">
+                            <td class="p-4 text-white/70 font-medium">Auto Follow-up Engine</td>
+                            <td class="p-4 text-center text-emerald-400 text-lg">✓</td>
+                            <td class="p-4 text-center text-white/40 text-lg">✓</td>
+                            <td class="p-4 text-center text-white/40 text-lg">✓</td>
+                            <td class="p-4 text-center text-white/20 text-lg">✗</td>
+                            <td class="p-4 text-center text-white/20 text-lg">✗</td>
+                        </tr>
+                        <tr class="hover:bg-white/[0.02] transition-colors">
+                            <td class="p-4 text-white/70 font-medium">WhatsApp Compliance</td>
+                            <td class="p-4 text-center text-emerald-400 text-lg">✓</td>
+                            <td class="p-4 text-center text-white/20 text-lg">✗</td>
+                            <td class="p-4 text-center text-white/40 text-lg">✓</td>
+                            <td class="p-4 text-center text-white/20 text-lg">✗</td>
+                            <td class="p-4 text-center text-white/40 text-lg">~</td>
+                        </tr>
+                        <tr class="hover:bg-white/[0.02] transition-colors">
+                            <td class="p-4 text-white/70 font-medium">MENA-Native Platform</td>
+                            <td class="p-4 text-center text-emerald-400 text-lg">✓</td>
+                            <td class="p-4 text-center text-white/20 text-lg">✗</td>
+                            <td class="p-4 text-center text-white/40 text-lg">✓</td>
+                            <td class="p-4 text-center text-white/40 text-lg">✓</td>
+                            <td class="p-4 text-center text-white/20 text-lg">✗</td>
+                        </tr>
+                        <tr class="hover:bg-white/[0.02] transition-colors border-t border-white/10">
+                            <td class="p-4 text-white/70 font-bold">Starting Price</td>
+                            <td class="p-4 text-center text-emerald-400 font-bold">$49/mo</td>
+                            <td class="p-4 text-center text-white/40">€500/mo</td>
+                            <td class="p-4 text-center text-white/40">150 AED/mo</td>
+                            <td class="p-4 text-center text-white/40">Free+</td>
+                            <td class="p-4 text-center text-white/40">N/A</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <p class="text-center text-white/30 text-xs mt-4">✓ Full support · ~ Partial · ✗ Not available</p>
+        </div>
+    </section>
+
+    <!-- ════════════════════════════════════════════════ -->
+    <!-- SECTION 4: Market Validation                    -->
+    <!-- ════════════════════════════════════════════════ -->
+    <section class="relative py-32 px-6 bg-dark overflow-hidden">
+        <div class="absolute inset-0 pointer-events-none">
+            <div class="absolute w-[60vw] h-[60vw] bg-orange-600/3 rounded-full blur-[120px] -bottom-40 -right-20"></div>
+        </div>
+        <div class="max-w-7xl mx-auto relative z-10">
+            <div class="text-center mb-20">
+                <span class="text-orange-500 tracking-widest text-xs font-bold uppercase mb-4 block">Market Opportunity</span>
+                <h2 class="text-4xl md:text-6xl font-extrabold text-white mb-6 tracking-tight">
+                    A Proven, <span class="text-transparent bg-clip-text bg-gradient-to-r from-orange-400 to-amber-500">Massive Market.</span>
+                </h2>
+                <p class="text-white/50 text-lg max-w-3xl mx-auto font-light">The MENA proptech market is exploding. Competitors are raising millions — validating the space we're building in.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-16">
+                <div class="glass-panel p-8 rounded-3xl text-center relative overflow-hidden">
+                    <div class="text-5xl font-black text-white mb-2 tracking-tighter">$35B<span class="text-lg text-orange-500">+</span></div>
+                    <div class="text-sm text-white/50 font-light">MENA PropTech Market by 2028</div>
+                    <div class="absolute inset-0 bg-gradient-to-b from-orange-500/5 to-transparent pointer-events-none"></div>
+                </div>
+                <div class="glass-panel p-8 rounded-3xl text-center relative overflow-hidden">
+                    <div class="text-5xl font-black text-white mb-2 tracking-tighter">72<span class="text-lg text-emerald-500">%</span></div>
+                    <div class="text-sm text-white/50 font-light">Of Gulf agents still use manual lead management</div>
+                    <div class="absolute inset-0 bg-gradient-to-b from-emerald-500/5 to-transparent pointer-events-none"></div>
+                </div>
+                <div class="glass-panel p-8 rounded-3xl text-center relative overflow-hidden">
+                    <div class="text-5xl font-black text-white mb-2 tracking-tighter">4.2x<span class="text-lg text-blue-500"></span></div>
+                    <div class="text-sm text-white/50 font-light">AI CRM adoption growth rate in MENA YoY</div>
+                    <div class="absolute inset-0 bg-gradient-to-b from-blue-500/5 to-transparent pointer-events-none"></div>
+                </div>
+            </div>
+
+            <!-- Competitor funding validation -->
+            <div class="glass-panel rounded-3xl p-8 md:p-12 border-l-4 border-l-emerald-500 relative overflow-hidden">
+                <div class="absolute top-0 right-0 w-40 h-40 bg-emerald-500/5 rounded-full blur-[60px]"></div>
+                <div class="relative z-10">
+                    <h3 class="text-2xl md:text-3xl font-extrabold text-white mb-4">Market Validation from Competitors</h3>
+                    <p class="text-white/60 text-base font-light leading-relaxed mb-8 max-w-3xl">
+                        Investors are pouring capital into AI-powered real estate platforms. Our closest competitor, <strong class="text-white">Gene.so</strong>, has been accelerated by <strong class="text-emerald-400">Google for Startups</strong>, <strong class="text-blue-400">Microsoft for Startups</strong>, and <strong class="text-green-400">NVIDIA Inception</strong> — processing over <strong class="text-white">$5B+ in property value</strong>. This proves the market is real, funded, and growing fast.
+                    </p>
+                    <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+                        <div class="bg-white/[0.03] rounded-xl p-4 text-center border border-white/5">
+                            <div class="text-white font-bold text-sm">Gene.so</div>
+                            <div class="text-emerald-400 text-xs mt-1">Google · Microsoft · NVIDIA</div>
+                        </div>
+                        <div class="bg-white/[0.03] rounded-xl p-4 text-center border border-white/5">
+                            <div class="text-white font-bold text-sm">Conversure</div>
+                            <div class="text-white/40 text-xs mt-1">50+ UAE Agencies</div>
+                        </div>
+                        <div class="bg-white/[0.03] rounded-xl p-4 text-center border border-white/5">
+                            <div class="text-white font-bold text-sm">Sift</div>
+                            <div class="text-white/40 text-xs mt-1">MENA Lead Qual.</div>
+                        </div>
+                        <div class="bg-white/[0.03] rounded-xl p-4 text-center border border-white/5">
+                            <div class="text-white font-bold text-sm">WaviCRM</div>
+                            <div class="text-white/40 text-xs mt-1">WhatsApp Multi-Acct</div>
+                        </div>
+                    </div>
+                    <p class="text-white/40 text-sm font-light mt-6 italic">
+                        → ZoeyHQ combines the best of all these platforms into one unified, MENA-native solution — at a fraction of the price.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ════════════════════════════════════════════════ -->
+    <!-- SECTION 5: Pricing Plans                        -->
+    <!-- ════════════════════════════════════════════════ -->
+    <section id="pricing" class="relative py-32 px-6 bg-dark overflow-hidden">
+        <div class="absolute inset-0 pointer-events-none">
+            <div class="absolute w-[40vw] h-[40vw] bg-purple-600/3 rounded-full blur-[120px] top-0 left-1/4"></div>
+        </div>
+        <div class="max-w-6xl mx-auto relative z-10">
+            <div class="text-center mb-20">
+                <span class="text-emerald-500 tracking-widest text-xs font-bold uppercase mb-4 block">Pricing</span>
+                <h2 class="text-4xl md:text-6xl font-extrabold text-white mb-6 tracking-tight">
+                    Simple. <span class="text-transparent bg-clip-text bg-gradient-to-r from-emerald-400 to-teal-500">Transparent.</span>
+                </h2>
+                <p class="text-white/50 text-lg max-w-2xl mx-auto font-light">No hidden fees. No per-lead charges. Just powerful tools at an honest price.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <!-- Starter -->
+                <div class="glass-panel rounded-3xl p-8 relative overflow-hidden hover:border-white/20 transition-all group">
+                    <div class="text-xs text-white/40 font-bold uppercase tracking-widest mb-4">Starter</div>
+                    <div class="flex items-baseline gap-1 mb-2">
+                        <span class="text-5xl font-black text-white">$49</span>
+                        <span class="text-white/40 text-sm">/month</span>
+                    </div>
+                    <p class="text-white/50 text-sm mb-8 font-light">For solo agents getting started with AI-powered sales.</p>
+                    <ul class="space-y-3 mb-8">
+                        <li class="flex items-center gap-3 text-sm text-white/70"><span class="text-emerald-400">✓</span> Up to 3 agents</li>
+                        <li class="flex items-center gap-3 text-sm text-white/70"><span class="text-emerald-400">✓</span> 500 leads/month</li>
+                        <li class="flex items-center gap-3 text-sm text-white/70"><span class="text-emerald-400">✓</span> WhatsApp integration</li>
+                        <li class="flex items-center gap-3 text-sm text-white/70"><span class="text-emerald-400">✓</span> Basic AI qualification</li>
+                        <li class="flex items-center gap-3 text-sm text-white/70"><span class="text-emerald-400">✓</span> CRM pipeline</li>
+                        <li class="flex items-center gap-3 text-sm text-white/40"><span class="text-white/20">✗</span> Advanced analytics</li>
+                    </ul>
+                    <button class="w-full py-3 rounded-full border border-white/20 text-white text-sm font-medium hover:bg-white hover:text-black transition-all">Get Started</button>
+                </div>
+
+                <!-- Growth (Popular) -->
+                <div class="relative rounded-3xl p-8 overflow-hidden bg-gradient-to-b from-emerald-500/10 to-transparent border-2 border-emerald-500/30 hover:border-emerald-500/50 transition-all group scale-[1.02]">
+                    <div class="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-emerald-400 to-teal-500"></div>
+                    <div class="flex items-center gap-2 mb-4">
+                        <div class="text-xs text-emerald-400 font-bold uppercase tracking-widest">Growth</div>
+                        <span class="px-2 py-0.5 rounded-full bg-emerald-500/20 text-emerald-400 text-[10px] font-bold">POPULAR</span>
+                    </div>
+                    <div class="flex items-baseline gap-1 mb-2">
+                        <span class="text-5xl font-black text-white">$149</span>
+                        <span class="text-white/40 text-sm">/month</span>
+                    </div>
+                    <p class="text-white/50 text-sm mb-8 font-light">For growing agencies scaling their operations.</p>
+                    <ul class="space-y-3 mb-8">
+                        <li class="flex items-center gap-3 text-sm text-white/70"><span class="text-emerald-400">✓</span> Up to 15 agents</li>
+                        <li class="flex items-center gap-3 text-sm text-white/70"><span class="text-emerald-400">✓</span> 5,000 leads/month</li>
+                        <li class="flex items-center gap-3 text-sm text-white/70"><span class="text-emerald-400">✓</span> All channels (WA + TG + IG)</li>
+                        <li class="flex items-center gap-3 text-sm text-white/70"><span class="text-emerald-400">✓</span> Advanced AI + Auto follow-ups</li>
+                        <li class="flex items-center gap-3 text-sm text-white/70"><span class="text-emerald-400">✓</span> Full CRM + analytics</li>
+                        <li class="flex items-center gap-3 text-sm text-white/70"><span class="text-emerald-400">✓</span> Priority support</li>
+                    </ul>
+                    <button class="w-full py-3 rounded-full bg-emerald-500 text-black text-sm font-bold hover:bg-emerald-400 transition-all shadow-[0_0_30px_rgba(16,185,129,0.3)]">Start Free Trial</button>
+                </div>
+
+                <!-- Enterprise -->
+                <div class="glass-panel rounded-3xl p-8 relative overflow-hidden hover:border-white/20 transition-all group">
+                    <div class="text-xs text-white/40 font-bold uppercase tracking-widest mb-4">Enterprise</div>
+                    <div class="flex items-baseline gap-1 mb-2">
+                        <span class="text-5xl font-black text-white">Custom</span>
+                    </div>
+                    <p class="text-white/50 text-sm mb-8 font-light">For large brokerages and property developers.</p>
+                    <ul class="space-y-3 mb-8">
+                        <li class="flex items-center gap-3 text-sm text-white/70"><span class="text-emerald-400">✓</span> Unlimited agents</li>
+                        <li class="flex items-center gap-3 text-sm text-white/70"><span class="text-emerald-400">✓</span> Unlimited leads</li>
+                        <li class="flex items-center gap-3 text-sm text-white/70"><span class="text-emerald-400">✓</span> All integrations + API</li>
+                        <li class="flex items-center gap-3 text-sm text-white/70"><span class="text-emerald-400">✓</span> Custom AI persona & workflows</li>
+                        <li class="flex items-center gap-3 text-sm text-white/70"><span class="text-emerald-400">✓</span> Dedicated account manager</li>
+                        <li class="flex items-center gap-3 text-sm text-white/70"><span class="text-emerald-400">✓</span> Custom SLA & onboarding</li>
+                    </ul>
+                    <button class="w-full py-3 rounded-full border border-white/20 text-white text-sm font-medium hover:bg-white hover:text-black transition-all">Contact Sales</button>
+                </div>
+            </div>
+
+            <p class="text-center text-white/30 text-sm mt-8">All plans include 7-day free trial · No credit card required · Cancel anytime</p>
+        </div>
+    </section>
+
+    <!-- ════════════════════════════════════════════════ -->
+    <!-- SECTION 6: Investment Ask                       -->
+    <!-- ════════════════════════════════════════════════ -->
+    <section id="invest" class="relative py-32 px-6 bg-dark overflow-hidden">
+        <div class="absolute inset-0 pointer-events-none">
+            <div class="absolute w-[70vw] h-[70vw] bg-emerald-600/3 rounded-full blur-[150px] top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2"></div>
+        </div>
+        <div class="max-w-6xl mx-auto relative z-10">
+            <div class="text-center mb-16">
+                <span class="text-emerald-500 tracking-widest text-xs font-bold uppercase mb-4 block">Seed Round</span>
+                <h2 class="text-4xl md:text-6xl lg:text-7xl font-extrabold tracking-tight mb-6 leading-tight">
+                    Fueling the <br>
+                    <span class="text-transparent bg-clip-text bg-gradient-to-r from-emerald-400 to-teal-500 glow-text-emerald">AI Real Estate Revolution.</span>
+                </h2>
+                <p class="text-white/60 text-xl md:text-2xl font-light mb-4 leading-relaxed max-w-3xl mx-auto">
+                    We are raising <strong class="text-white font-bold text-3xl">$100,000</strong> for <strong class="text-white font-bold text-3xl">10% equity</strong>.
+                </p>
+                <p class="text-white/40 text-base font-light max-w-2xl mx-auto">Pre-money valuation: $1M — at the earliest, most favorable stage for investors.</p>
+            </div>
+
+            <!-- Fund Allocation -->
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-16">
+                <div class="glass-panel p-8 rounded-3xl text-left border-t-4 border-t-emerald-500 relative overflow-hidden hover:scale-[1.02] transition-transform">
+                    <div class="text-5xl font-black text-white mb-2 tracking-tighter">30<span class="text-xl text-emerald-500">%</span></div>
+                    <div class="text-sm text-emerald-400 font-bold mb-3 uppercase tracking-widest">AI & Servers</div>
+                    <p class="text-sm text-white/50 font-light leading-relaxed">Scaling LLM APIs, GPU infrastructure, and real-time processing for lead qualification across all channels.</p>
+                    <div class="absolute bottom-0 right-0 w-20 h-20 bg-emerald-500/5 rounded-full blur-[30px]"></div>
+                </div>
+                <div class="glass-panel p-8 rounded-3xl text-left border-t-4 border-t-blue-500 relative overflow-hidden hover:scale-[1.02] transition-transform">
+                    <div class="text-5xl font-black text-white mb-2 tracking-tighter">20<span class="text-xl text-blue-500">%</span></div>
+                    <div class="text-sm text-blue-400 font-bold mb-3 uppercase tracking-widest">Dev & Infrastructure</div>
+                    <p class="text-sm text-white/50 font-light leading-relaxed">Core platform, omnichannel gateways, mobile app development, and enterprise-grade security.</p>
+                    <div class="absolute bottom-0 right-0 w-20 h-20 bg-blue-500/5 rounded-full blur-[30px]"></div>
+                </div>
+                <div class="glass-panel p-8 rounded-3xl text-left border-t-4 border-t-orange-500 relative overflow-hidden hover:scale-[1.02] transition-transform">
+                    <div class="text-5xl font-black text-white mb-2 tracking-tighter">50<span class="text-xl text-orange-500">%</span></div>
+                    <div class="text-sm text-orange-400 font-bold mb-3 uppercase tracking-widest">Go-to-Market</div>
+                    <p class="text-sm text-white/50 font-light leading-relaxed">Aggressive market penetration across Gulf states — sales team, partnerships with agencies, and digital campaigns.</p>
+                    <div class="absolute bottom-0 right-0 w-20 h-20 bg-orange-500/5 rounded-full blur-[30px]"></div>
+                </div>
+            </div>
+
+            <!-- Roadmap -->
+            <div class="glass-panel rounded-3xl p-8 md:p-12 mb-16">
+                <h3 class="text-2xl font-extrabold text-white mb-8 text-center">What We Deliver With This Round</h3>
+                <div class="grid grid-cols-1 md:grid-cols-4 gap-6">
+                    <div class="text-center">
+                        <div class="w-14 h-14 rounded-2xl bg-emerald-500/10 border border-emerald-500/20 flex items-center justify-center mx-auto mb-4">
+                            <span class="text-emerald-400 font-bold text-lg">Q1</span>
+                        </div>
+                        <h4 class="text-white font-bold text-sm mb-2">Foundation</h4>
+                        <p class="text-white/40 text-xs font-light">Launch WhatsApp + Telegram integration. Onboard first 50 agencies in UAE & Oman.</p>
+                    </div>
+                    <div class="text-center">
+                        <div class="w-14 h-14 rounded-2xl bg-blue-500/10 border border-blue-500/20 flex items-center justify-center mx-auto mb-4">
+                            <span class="text-blue-400 font-bold text-lg">Q2</span>
+                        </div>
+                        <h4 class="text-white font-bold text-sm mb-2">AI Engine</h4>
+                        <p class="text-white/40 text-xs font-light">Deploy full AI lead qualification. Launch smart follow-up engine & analytics dashboard.</p>
+                    </div>
+                    <div class="text-center">
+                        <div class="w-14 h-14 rounded-2xl bg-orange-500/10 border border-orange-500/20 flex items-center justify-center mx-auto mb-4">
+                            <span class="text-orange-400 font-bold text-lg">Q3</span>
+                        </div>
+                        <h4 class="text-white font-bold text-sm mb-2">Scale</h4>
+                        <p class="text-white/40 text-xs font-light">Expand to Saudi Arabia & Qatar. Launch Instagram channel. Hit 200+ agency customers.</p>
+                    </div>
+                    <div class="text-center">
+                        <div class="w-14 h-14 rounded-2xl bg-purple-500/10 border border-purple-500/20 flex items-center justify-center mx-auto mb-4">
+                            <span class="text-purple-400 font-bold text-lg">Q4</span>
+                        </div>
+                        <h4 class="text-white font-bold text-sm mb-2">Revenue</h4>
+                        <p class="text-white/40 text-xs font-light">Hit MRR targets. Launch enterprise tier. Prepare for Series A with proven unit economics.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- CTA -->
+            <div class="text-center">
+                <a href="mailto:invest@zoeyhq.website" class="inline-flex items-center gap-3 px-10 py-5 rounded-full bg-emerald-500 text-black font-bold text-lg hover:bg-emerald-400 transition-all shadow-[0_0_50px_rgba(16,185,129,0.3)] hover:shadow-[0_0_80px_rgba(16,185,129,0.5)]">
+                    Let's Talk Investment
+                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6"/></svg>
+                </a>
+                <p class="text-white/30 text-sm mt-4">invest@zoeyhq.website · Response within 24 hours</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- ════════════════════════════════════════════════ -->
+    <!-- FOOTER                                          -->
+    <!-- ════════════════════════════════════════════════ -->
+    <footer class="border-t border-white/5 py-12 px-6 bg-dark">
+        <div class="max-w-6xl mx-auto flex flex-col md:flex-row justify-between items-center gap-6">
+            <div class="text-center md:text-left">
+                <a href="https://zoeyhq.website" target="_blank" class="font-bold text-xl tracking-widest text-white hover:text-emerald-400 transition-colors">
+                    ZOEY<span class="text-emerald-500">HQ</span>
+                </a>
+                <p class="text-white/30 text-xs mt-2">Built with passion from the Gulf · © 2025 ZoeyHQ</p>
+            </div>
+            <div class="flex items-center gap-6">
+                <a href="https://zoeyhq.website" target="_blank" class="text-white/40 text-sm hover:text-white transition-colors">Platform</a>
+                <a href="#pricing" class="text-white/40 text-sm hover:text-white transition-colors">Pricing</a>
+                <a href="#invest" class="text-white/40 text-sm hover:text-white transition-colors">Invest</a>
+                <a href="mailto:invest@zoeyhq.website" class="text-white/40 text-sm hover:text-emerald-400 transition-colors">Contact</a>
+            </div>
+        </div>
+    </footer>
+</Layout>
+
+<style>
+    .feature-card {
+        background: rgba(255, 255, 255, 0.03);
+        backdrop-filter: blur(12px);
+        -webkit-backdrop-filter: blur(12px);
+        border: 1px solid rgba(255, 255, 255, 0.1);
+        box-shadow: 0 20px 40px rgba(0,0,0,0.4), inset 0 1px 0 rgba(255,255,255,0.05);
+        padding: 1.75rem;
+        border-radius: 1.5rem;
+        position: relative;
+        overflow: hidden;
+        transition: all 0.3s ease;
+    }
+    .feature-card:hover {
+        transform: translateY(-6px);
+        border-color: rgba(255,255,255,0.15);
+        box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+    }
+</style>
+
+<script>
+    import gsap from 'gsap';
+    import { ScrollTrigger } from 'gsap/ScrollTrigger';
+    import Lenis from '@studio-freight/lenis';
+
+    gsap.registerPlugin(ScrollTrigger);
+
+    const lenis = new Lenis({
+        duration: 0.8,
+        easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)),
+        smooth: true,
+        smoothTouch: false
+    });
+
+    lenis.on('scroll', ScrollTrigger.update);
+    gsap.ticker.add((time) => { lenis.raf(time * 1000); });
+    gsap.ticker.lagSmoothing(500, 33);
+
+    // Pinned story timeline
+    const tl = gsap.timeline({
+        scrollTrigger: {
+            trigger: "#story-pin",
+            start: "top top",
+            end: "+=4500",
+            scrub: 0.5,
+            pin: true,
+            anticipatePin: 1
+        },
+        defaults: { ease: "none", force3D: true }
+    });
+
+    // PHASE 1: Hero -> Chaos
+    tl.addLabel("startChaos")
+      .to(".scene-hero", { opacity: 0, y: -50, duration: 1 }, "startChaos")
+      .to(".orb-hero", { opacity: 0, duration: 1 }, "startChaos")
+      .to(".orb-chaos", { opacity: 1, duration: 1 }, "startChaos+=0.5")
+      .fromTo(".scene-chaos",
+            { opacity: 0, scale: 1.05 },
+            { opacity: 1, scale: 1, duration: 1.5, ease: "power2.out" }, "startChaos+=0.5")
+      .from(".target-message", { scale: 0.8, opacity: 0, rotation: -5, duration: 1, ease: "back.out(1.5)"}, "startChaos+=1")
+      .to(".target-message", { scale: 1.05, boxShadow: "0 0 80px rgba(225,29,72,0.4)", duration: 1, yoyo: true, repeat: 1 }, "startChaos+=1.5");
+
+    // PHASE 2: Chaos -> Journey
+    tl.addLabel("startJourney", "+=0.5")
+      .to(".scene-chaos", { opacity: 0, y: -50, scale: 0.9, duration: 1 }, "startJourney")
+      .to(".orb-chaos", { opacity: 0, duration: 1 }, "startJourney")
+      .to(".orb-solution", { opacity: 1, duration: 1 }, "startJourney+=0.5")
+      .fromTo(".scene-journey",
+            { opacity: 0, scale: 1.05, y: 50 },
+            { opacity: 1, scale: 1, y: 0, duration: 1.5, ease: "power3.out" }, "startJourney+=0.5")
+      .from(".solution-dash", { rotationX: -10, rotationY: -20, z: -200, duration: 1.5, ease: "power2.out" }, "startJourney+=0.5");
+
+    // PHASE 3: Micro-interactions
+    tl.addLabel("ingestMsg", "+=0.5")
+      .to(".msg-card", { opacity: 1, y: 0, duration: 1, ease: "back.out(1.2)" }, "ingestMsg");
+
+    tl.addLabel("scanMsg", "+=0.8")
+      .to(".flow-text-1", { opacity: 0, y: -30, duration: 0.8 }, "scanMsg")
+      .to(".flow-text-2", { opacity: 1, y: 0, duration: 0.8 }, "scanMsg+=0.2")
+      .to(".scanner-bar", { opacity: 1, duration: 0.2 }, "scanMsg")
+      .to(".scanner-bar", { y: "500%", duration: 1.5, ease: "power1.inOut" }, "scanMsg+=0.2")
+      .to(".scanner-bar", { opacity: 0, duration: 0.2 }, "scanMsg+=1.7")
+      .to(".ai-analysis-wrapper", { opacity: 1, height: "auto", duration: 1.2, ease: "power3.out" }, "scanMsg+=1.2");
+
+    // PHASE 4: Conversion
+    tl.addLabel("convertLead", "+=1")
+      .to(".flow-text-2", { opacity: 0, y: -30, duration: 0.8 }, "convertLead")
+      .to(".flow-text-3", { opacity: 1, y: 0, duration: 0.8 }, "convertLead+=0.2")
+      .to(".orb-solution", { opacity: 0, duration: 1 }, "convertLead")
+      .to(".orb-features", { opacity: 1, duration: 1 }, "convertLead")
+      .to(".msg-card", {
+          borderColor: "rgba(249, 115, 22, 0.5)",
+          backgroundColor: "rgba(249, 115, 22, 0.05)",
+          boxShadow: "0 0 40px rgba(249, 115, 22, 0.15)",
+          scale: 1.02,
+          duration: 1,
+          ease: "back.out(1.5)"
+      }, "convertLead");
+
+    // PHASE 5: Journey -> Gulf Pride
+    tl.addLabel("startAsk", "+=1")
+      .to(".scene-journey", { opacity: 0, y: -50, scale: 0.9, duration: 1 }, "startAsk")
+      .fromTo(".scene-ask",
+            { opacity: 0, scale: 1.05 },
+            { opacity: 1, scale: 1, duration: 1.5, ease: "power3.out" }, "startAsk+=0.5");
+
+    // Scroll-triggered fade-in for sections below the pin
+    gsap.utils.toArray('#features, #compare, #pricing, #invest').forEach((section) => {
+        gsap.from(section as HTMLElement, {
+            scrollTrigger: {
+                trigger: section as HTMLElement,
+                start: "top 85%",
+                toggleActions: "play none none none"
+            },
+            opacity: 0,
+            y: 40,
+            duration: 1,
+            ease: "power3.out"
+        });
+    });
+</script>
